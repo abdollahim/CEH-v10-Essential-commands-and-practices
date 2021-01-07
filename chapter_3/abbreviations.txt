@@ -1,0 +1,129 @@
+hack types:
+    black box hack
+    gray box hack
+    white box hack
+
+contracts are important
+permissions is required
+privileges
+legal operations should be keep in mind before starting hacking.
+most concerns
+
+hackers:
+    hacktivist
+    script kiddies
+    suicide hacker
+
+hack values:
+    most important sections/area/sensitive in that organizations
+
+vulnerabilities:
+    weaknesses
+
+exploits:
+    successful attacks, executions on the target
+
+payloads:
+    sending crafted data on the target machine.
+
+zero days:
+    the security problems not published yet.
+
+pivoting (daisy chaining):
+    going through different machines to run a series of attack and get access to the specified server/machine.
+
+doxing:
+    publishing personal identification information
+
+bot/botnet:
+    running some attack executions on the infected machines.
+
+------------------------------------------------------
+
+access and stealth
+manipulation
+make the target down
+
+fsu triangle:
+    functionality, security, usability
+
+cia triangle:
+    confidentiality, integrity, availability
+
+authenticity related to integrity
+
+non repudiation (we known who did what)
+    keep logs and tracking data
+
+------------------------------------------------------
+
+attack vectors:
+    advanced persistent threat
+    botnet
+    cloud computing
+    insider attacks
+    mobile attacks
+    viruses
+    worms
+    malware
+
+attack types:
+    os targeted
+    problematic configurations
+    application level issues
+        buffer over flow
+        injection
+        xss
+        ...
+    shrinkwrap (default packages we install on the machines might have misconfiguration problems!)
+
+------------------------------------------------------
+
+reconnaissance (information gathering)
+    passive (googling, news, whois, ip, host, archives, etc.)
+    active (call and ask, visit there, etc.)
+scanning
+    which port is open?
+    what os is used?
+    what devices is running?
+    what softwares are running?
+    what vulnerabilities we can find on the targets?
+    what misconfiguration problems are there?
+gaining access
+maintaining access
+    rootkits
+    trojans
+    backdoors
+    etc.
+cover tracks
+    logs and etc.
+
+------------------------------------------------------
+
+network types:
+    bus
+    ring
+    star (router)
+
+7 layer osi model
+tcp/ip
+ip subnet (255.255.255.0)
+hex and binary understanding
+ports (21, 22, 53, 80, etc.)
+dns (domain name system)
+network devices
+    hub
+    switch
+    router
+    firewall
+    ids (intrusion detection system)
+    ips (intrusion prevention system)
+operating systems
+    linux
+    windows
+    mac
+    android
+backups and archiving
+    full backup
+    differential backup
+    incremental backup
