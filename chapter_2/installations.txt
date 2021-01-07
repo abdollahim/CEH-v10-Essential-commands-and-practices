@@ -1,0 +1,4 @@
+installing virtual box
+installing kali
+installing metasploitable 2 (by offensive security)
+installing owasp bwa (broken web application)
