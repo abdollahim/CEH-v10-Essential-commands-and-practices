@@ -1,0 +1,20 @@
+1: Which of the following is not typically used during footprinting?
+    C. Port scanning
+2: What is the role of social engineering?
+    C. To gain information from human beings
+3: Which of the following can an attacker use to determine the technology and structurewithin an organization?
+    A. Job boards
+4: The Wayback Machine is used to do which of the following?
+    C. View archived versions of websites
+5: Which record will reveal information about a mail server for a domain?
+    D. MX
+6: What phase comes after footprinting?
+    C. Scanning
+7: If you can’t gain enough information directly from a target, what is another option?
+    D. Competitive analysis
+8: Footprinting can determine all of the following except __________?
+    D. Distribution and number of personnel
+9: Footprinting has two phases. What are they?
+    B. Active and passive
+10: Which tool can trace the path of a packet?
+    B. Tracert

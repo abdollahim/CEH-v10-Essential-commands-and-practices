@@ -1,0 +1,12 @@
+go.zoom.us => 18.205.93.184	
+ocs.zoom.us => ocs.zoom.us
+origin.zoom.us => 3.235.73.120
+resolver.zoom.us => 52.202.62.250
+relay.zoom.us => 52.202.62.250
+jira.zoom.us => 52.215.192.136
+support.zoom.us => 104.16.53.111
+gps.zoom.us => 18.205.93.255
+jenkins.zoom.us => 4.34.125.203
+digits.zoom.us => 3.235.73.93
+sos.zoom.us => 3.235.73.95
+unit.zoom.us => 3.120.121.14

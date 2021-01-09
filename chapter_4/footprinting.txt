@@ -1,0 +1,99 @@
+open source or passive and active
+pseudonymous footprinting
+checking their website itself
+    checking commands in java script files or html sources.
+internet archive
+    web.archive.org
+
+netcraft online tool to check the footprint of a website
+    titles
+    domains
+    ip address
+    registrar
+    organization
+    country
+    ssl details
+    technologies
+    operating system
+    cms
+
+google (general, specific search the vulnerability)
+google maps
+anywho
+job search websites
+    find employees
+    reports
+    feedbacks
+    talking technologies
+forums, blogs, etc.
+social networks
+email (check email header information)
+    putting a 1x1 image to know when the victim tries to load it from his ip address. (gather his ip address)
+    putting a link to open by victim
+    trackers
+        email trackers pro (windows)
+    tools:
+        email header analyzer tools
+whois
+dns
+    concept
+    tools:
+        nslookup
+            nslookup google.com 
+            nslookup yahoo.com 4.2.2.4
+        online dns checkers
+        ip to location online tools
+    aaaa
+    mx records (to set where emails should forward or send/receive)
+        mail records
+        nslookup google.com mx
+    
+traceroute
+social engineering
+    people weaknesses
+    information gathering about employees and people
+    wink, intelius, linkedin, instagram, facebook, twitter, google, anywho, etc.
+    gather information about the target from competitors.
+
+    eavesdropping
+        key loggers
+    pishing
+        fake banking online payment page
+    shoulder surfing
+        remember the passwords you see on their phones when they are typing it on their phone.
+    dumpster diving
+        garbage collectors
+
+------------------------------------------------------
+
+google hacking database (ghdb)
+    normal search
+    advanced search
+    examples:
+        intitle:
+        site:
+        link:
+        info:
+        allintitle:
+        allinurl:
+        intext:
+        ""
+        or
+        and
+    find default camera links
+    find default username/passwords
+    find vulnerable urls/arguments
+        example:
+            search.php?id=1
+            show.aspx?location=2
+            intitle:"camera 7" inurl:"/gallery.html"
+hackthissite.org
+
+------------------------------------------------------
+
+website checking
+    web data extractor
+    httrack (webhttrack)
+    wget
+    metagoofil
+        metagoofil -d google.com -t pdf,doc -l 200 -n 3 -o files.txt -f results.html
