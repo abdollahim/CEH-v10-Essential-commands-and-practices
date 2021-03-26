@@ -1,0 +1,28 @@
+1. Which of the following is used for banner grabbing?
+    A: Telnet
+2. Which of the following is used for identifying a web server OS?
+    B: Netcraft
+3. Which of the following is not a flag on a packet?
+    D: End
+4. An SYN attack uses which protocol?
+    A: TCP
+    Hint: An RST indicates the port is closed in many of the TCP scan types. The RST is sent in response to a connection request and the RST indicates that the port is not available.
+5. During an FIN scan, what indicates that a port is closed?
+    B: RST
+6. A full-open scan means that the three-way handshake has been completed. What is the difference between this and a half-open scan?
+    C: A half-open does not include the final ACK
+7. What is an ICMP echo scan?
+    A: A ping sweep
+8. What is the purpose of a proxy?
+    C: To keep a scan hidden
+9. A banner can do what?
+    D: Identify a service
+    Hint: A banner can be changed on many services, keeping them from being easily identified. If this is not done, it is possible to use tools such as Telnet to gain information about a service and use that information to fine-tune an attack.
+10. nmap is required to perform what type of scan?
+    A: Port scan
+    Hint: Nmap is designed to perform scans against ports on a system or group of systems,but it is by far the most popular tool in many categories.
+
+Hints:
+    1. Tor is designed to hide the process of scanning as well as the origin of a scan. In addition, it can provide encryption services to hide the traffic itself.
+    2. You do not need to use a proxy to perform scanning, but using one will hide the process of scanning and make it more difficult to monitor by the victim or other parties.
+    3. Vulnerability scanners are necessary for a security person to use to strengthen their systems by finding weaknesses before an attacker does.

@@ -1,0 +1,96 @@
+hping3 -1 yahoo.com
+man hping3
+    -i interval
+    -c count
+    --fast
+    --faster
+    --flood
+    -n nummeric
+    -q quiet
+    -I interface name
+    -v version
+    -V verbose
+    -1 --icmp
+    -2 --udp
+    -8 scan
+    spoofing and etc...
+	test firewall rules and etc.
+
+    examples:
+        hping3 -A yahoo.com -p 80 to send an ack packet to check if there is a stateful firewall or not:
+            you can receive a RST answer to understand not or reject packet to understand yes.
+            so you can send a SYN packet to check it again.
+        hping3 -F -P -U jadi.ir FIN, PUSH, URGENT (-sX in nmap)
+        hping3 -V --flood -c 1000000 -d 120 -S -p 80 -s 192.168.0.119 => flooding and spoofing SYN packets.
+
+nmap
+    nmap -sn 192.168.10.1/24
+    nmap -sT full scan three way handshaking
+    nmap -sS stealth, syn or half open scan (check to get different answer)
+    nmap -sX (FIN, PUSH, URGENT)
+    nmap -sF Fin scan like Xmas and it can pass firewalls because stateful firewalls might reject it, but others cannot detect that so we can check if there is firewall or not !
+    nmap -sN send null like Fin, but no flag is set
+    nmap Ack scans to check stateful firewalls
+    UDP scans return nothing if that port is open and it returns ICMP unrecheable if that port is closed.
+ 
+idle scan
+    nmap -Pn -sI <src ip> <dst ip> -p 1000 (ping nakon because for this type of scan we dont want to be seen!)
+    --packet-trace to trace all activities over the network scanning phase.
+    check wireshark when the packet trace options is enabled.
+
+    TCP sequence prediction should not be difficult to make it useful !
+    Also, IP ID sequence generation should not be 'All zeroes'.
+
+telnet
+    telnet google.com 80
+        get /
+
+nc
+    nc -l localhost 9000
+    telnet localhost 9000
+    to make a simple live listener and talker channel.
+
+    nc 192.168.1.1 to listen if receive a message from that
+
+ID serve banner grabbing
+    to get server banner like htprint
+
+nessus
+    like openvas
+
+solar winds topology mapper
+    to scan and discover all different devices / nodes over the network.
+
+scapy
+    packet manipulation tool. create, capture, play, replay, scan, discover and etc.
+    example:
+        send(IP(src="192.168.1.100", dst="192.168.2.100")/ICMP()/"Hello world.")
+        
+        define and manipulate variables like these:
+            L2 = Ether()
+            L3 = IP()
+            L4 = TCP()
+            L2 (press enter)
+            L2.show()
+            L2.src = "MAC_ADDRESS"
+        sendp(L2/L3/L4)
+        L3.show()
+        L4 = TCP(sport=700, dport=22, flags="A")
+        L4.show()
+        sendp()
+
+        sniff(iface="eth0", prn=lambda x: x.show()) => act like wireshark
+        a = sniff(filter="src 192.168.1.10", count=10)
+        a.nsummary() => to see a summary of packets
+
+proxy
+    hiding ip address
+    visiting by another ip address (like openning paypal with a fixed allowed ip address)
+    have a fixed ip address
+    bypassing filtering
+    accessing a safe dmz/area to daisy chain to a network
+
+    proxy workbench
+    squid
+    privoxy
+    proxy switcher
