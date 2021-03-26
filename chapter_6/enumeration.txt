@@ -1,0 +1,20 @@
+Enumerations is he process of extracting information from a target system to determine more of the configuration and environment present. in many cases it is possible to extract information such as usernames, machine names, shares, and services from a system as well as other information, depending on the OS itself.
+
+We will need active connection!
+
+All devices do have info:
+    Network resources and shares
+    Users and groups
+    Routing tables
+    Auditing and service settings
+    Machine names
+    Applications and banners
+    SNMP
+    DNS, NTP
+    Active directory, LDAP
+    NetBios
+    Default password BruteForce
+    etc.
+
+Here, in this phase we have active connection to the system to get information.
+For legal test projects we should have contract to do this phase!
