@@ -1,0 +1,31 @@
+Concept
+    port 161 UDP
+    OID (attribute name that you want to get)
+        example:
+            get one minute load of the CPU: 1.3.6.1.4.1.2021.10.1.3.1
+    community string is like password
+        example:
+            snmp 192.168.1.12 1.3.6.1.4.1.2021.10.1.3.1 -c 46515fsf16f#KJfnkdf (sending that clear on the wire :D)
+            you can see how easy and old it is :)
+            it was a simple way to control the network, but these days it's very important and useful.
+    versions 1, 2, 3
+On windows snmputil.exe
+    get
+    getnext
+    walk
+SNScan from McAfee, also checks network
+    check all SNMP in the network and walk/watch them.
+IP Network Browser (Solarwinds)
+metasploit also has SNMP
+    search SNMP and we will use snmp_enum
+    use auxiliary/scanner/snmp/snmp_enum
+    show options
+    set RHOSTS 192.168.1.12
+    run
+snmpwalk -v 1 -c public demo.snmplabs.com
+snmpget -v 1 -c "community" target_name_or_ip .1.3.6.1.4.1.2021.10.1.3.1
+
+you can get all sub values by entering the top tree category value like .1.3.6.1.4.1.2021.10.1.3
+    load.1 = STRING: 14.13516516
+    load.2 = STRING: 12.16151651
+    etc.
