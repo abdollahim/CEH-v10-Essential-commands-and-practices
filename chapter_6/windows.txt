@@ -1,0 +1,31 @@
+Users
+    contexts:
+        Local service
+        Network service
+        System
+        Current user
+Groups
+     Anonymous logon
+     Batch
+     Creator group
+     Creator owner
+     Everyone
+     Interactive
+     Network
+     Restricted
+     Self
+     Service
+     System
+     Terminal server user
+SID (Security identifiers)
+    Concept
+    Decoding
+    Location
+PSTools commands
+    PsExec (execute remotely)
+    PsFile (display opened files remotely)
+    PsInfo (get info from remote server)
+    PsKill
+    PsLoggedOn
+    PsPasswd
+    etc.
