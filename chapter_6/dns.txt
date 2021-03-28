@@ -11,7 +11,7 @@ Linux
     dig domain.com axfr
     dig +short ns domain.com
 
-to get all subdomains from the DNS server:
+if the main DNS server don't answer, we can get all subdomains from another DNS server:
     dig axfr google.com @dns_server.com
         you should ask a server that return all information about your target with AXFR option because some DNS servers don't answer to your request!
 
