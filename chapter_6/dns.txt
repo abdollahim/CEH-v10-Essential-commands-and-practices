@@ -1,0 +1,18 @@
+port 53
+AXFR
+    "DNS Zone transfer" sends DNS information from one server to another server to have HA (high availability)
+    sync DNS servers
+Windows
+    nslookup
+        > server ns.domain.com
+        > type=any
+        > ls -d domain.com
+Linux
+    dig domain.com axfr
+    dig +short ns domain.com
+
+to get all subdomains from the DNS server:
+    dig axfr google.com @dns_server.com
+        you should ask a server that return all information about your target with AXFR option because some DNS servers don't answer to your request!
+
+you can use DNS zone transfer to get all subdomains for the specific domain name to get a way to know how many services they have and what vulnerabilities there are :)
