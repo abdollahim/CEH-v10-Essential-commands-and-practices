@@ -18,10 +18,18 @@ Groups
      System
      Terminal server user
 SID (Security identifiers)
+    example:
+        S-1-5-18 (can be found in any copy of windows before you try to login to the system.)
+        S-1-0-0 (Null SID)
+        S-1-1-0 (World)
+        S-1-2-0 (Local)
     Concept
     Decoding
     Location
-PSTools commands
+    SAM (Security account manager)
+        can be encrypted by LM hash and NTLM hash formats, but thats not necessary encrypted.
+            Path: \Windows\System32\config\
+PSTools commands (Microsoft tools)
     PsExec (execute remotely)
     PsFile (display opened files remotely)
     PsInfo (get info from remote server)

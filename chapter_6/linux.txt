@@ -1,0 +1,24 @@
+Users
+    username and user ID (UUID)
+    password
+        /etc/passwd (it has encrypted password in new distributions)
+        /etc/shadow (sudoers only and show hash encrypted passwords)
+    primary group name and group ID (GID)
+    secondary group names and group IDs
+    location of the home directory
+    preferred shell
+    example:
+        username:password:UID:GID:name:home_directory:shell
+Services and ports
+    we are talking about ports that you can enumerate information by!
+        21, 23, 25, 53, 80, 135, 137, 139, 445, 161, 162, 389, 3268
+Everything is file
+    we can find almost everything in files in Linux!
+Various commands like
+    finger
+        old linux command
+    rcpinfo
+    showmount
+        showing the mounted system
+    enum4linux (uses samba)
+        gathering information from Windows systems from Linux by SAMBA service.
