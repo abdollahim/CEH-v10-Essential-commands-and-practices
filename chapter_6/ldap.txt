@@ -1,0 +1,8 @@
+Lightweight Directory Access Protocol (LDAP)
+    it's used to interact with and organize databases to authenticate and authorize users.
+    most of the time windows server is running LDAP alongside Active Directory but can work with Novell eDirectory, OpenLDAP, Open Directory, Oracle iPlanet too.
+    TCP/UDP port 389 is unencrypted and you will be able to see the username and password if it's plain text.
+    TCP port 636 is encrypted and known as LDAPS (Lightweight Directory Access Protocol over SSL)
+    jxplorer.org
+        LDAP client/editor/browser you can use to read/copy/delete/etc on the LDAP
+    to prevent enumeration, you should define correct permissions and security settings.
