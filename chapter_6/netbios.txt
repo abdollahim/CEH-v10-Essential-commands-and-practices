@@ -1,18 +1,18 @@
 very old and still present as netbios over tcp
     NetBiosOverTCP
         api that allows different programs in different systems to introduce themselves to each other.
-    deprecated in linux, but it is still available in Window
+    deprecated in linux, but it is still available in Windows.
 information like computers, shares, services
 you can check with nmap for netbios
     138, 139 TCP
     137 UDP
-on windows you can test with "nbtstat"
+on Windows, you can test it with "nbtstat"
     -a for netbios name
     -A for ip
     -c show cache
 suffix codes are in netbios and netbios over tcp/ip on wiki
-on windows "net view \\192.168.1.12" will show shares. this will connect with specific NULL session.
+on Windows "net view \\192.168.1.12" will show shares. this will connect with specific NULL session.
 GUIs like "netbios enumeration" on sourceforge or "superscan"
 
-NetBios is used to gather information from old network and almost there is no usage on the new TCP/IP network.
+NetBios is used to gather information from old networks and there is no usage on the new TCP/IP network.
 maybe one day you can see it somewhere.
