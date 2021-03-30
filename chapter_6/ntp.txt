@@ -1,0 +1,13 @@
+Network Time Protocol
+    UDP port 123
+    works like a chain of clocks and gives all machines sae time.
+    Time is important for DBs, logs, certs, etc.
+    older versions of NTP will provide you the IP of the clients.
+    
+    tools
+        ntpdc (cli, help, monlist)
+        ntpdate (pool.ntp.org)
+        nmap -sU -pU:123 --script=ntp-monlist 192.168.1.12
+            check on nmap manual date
+
+    by monlist we can get all IPs that are setting their time via the NTP server we are talking about if it is enabled on the server.
