@@ -1,20 +1,20 @@
 1: Which of the following is not typically used during footprinting?
-    C. Port scanning
+    C. Port scanning is typically reserved for later stages of the attack process.
 2: What is the role of social engineering?
-    C. To gain information from human beings
-3: Which of the following can an attacker use to determine the technology and structurewithin an organization?
-    A. Job boards
+    C. Social engineering can gain information about computers and other items, but it does so by interacting with people to extract that information.
+3: Which of the following can an attacker use to determine the technology and structure within an organization?
+    A. Job boards are useful in getting an idea of the technology within an organization. By looking at job requirements, you can get a good idea of the technology present. While the other options here may provide technical data, job boards tend to have the best chance of providing it.
 4: The Wayback Machine is used to do which of the following?
-    C. View archived versions of websites
+    C. The Wayback Machine is used to view archived versions of websites if available (not all websites are archived via the Wayback Machine).
 5: Which record will reveal information about a mail server for a domain?
-    D. MX
+    D. MX records are DNS records used to locate the mail server for a domain.
 6: What phase comes after footprinting?
-    C. Scanning
+    C.  Scanning comes after the footprinting phase. Footprinting is used to get a better idea of the target.
 7: If you can’t gain enough information directly from a target, what is another option?
-    D. Competitive analysis
-8: Footprinting can determine all of the following except __________?
-    D. Distribution and number of personnel
+    D. Competitive analysis can prove very effective when you’re trying to gain more detailed information about a target. Competitive analysis relies on looking at a target’s competitors in an effort to find out more about the target.
+8: Footprinting can determine all of the following except -------------?
+    D. Footprinting is not very effective at gaining information about the number of personnel.
 9: Footprinting has two phases. What are they?
-    B. Active and passive
+    B. Footprinting is typically broken into active and passive phases, which are characterized by how aggressive the process actually is. Active phases are much more aggressive than their passive counterparts.
 10: Which tool can trace the path of a packet?
-    B. Tracert
+    B. Tracert is a tool used to trace the path of a packet from source to ultimate destination.
