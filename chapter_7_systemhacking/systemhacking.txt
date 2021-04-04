@@ -1,0 +1,38 @@
+Entering to the system (hacking the system)
+
+Gaining access
+    Password attacks
+        default passwords
+        guessing passwords
+        non electronic
+        active online attacks
+            brute force
+            dictionary based
+            malware
+        passive online attacks
+            sniffing
+            MiTM
+        offline attacks
+            rainbow table
+            brute force
+    Escalating privileges
+        bugs
+        configuration problems
+        exploiting
+    Executing applications
+        backdoors
+        rootkits
+        remote access
+    hiding files/activities you have done on the target
+        all above should be hidden
+        hiding connections
+        hiding data transmission
+        sending payloads in different packets and ways like stenography
+    covering tracks
+        footprints
+        logs
+        turning off the logging system or something like that
+        histories
+        windows registry
+        syslog
+        etc.
