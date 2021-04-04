@@ -1,0 +1,31 @@
+Simple Mail Transfer Protocol
+    Email addresses are everywhere: site, cards, ads, etc.
+    POP3 110(no encryption) and 995(encrypted)
+        no synchronization on different devices
+    IMAP 143(non encrypted) and 993(encrypted)
+        sync emails on different devices
+    SMTP 25
+        simple
+        enumeration
+        commands
+           HELO
+           EHLO
+           MAIL FROM
+           RCPT TO
+           SIZE
+           DATA
+           VRFY (check a particular email address is exist or not)
+           TURN
+           AUTH
+           RSET
+           EXPN (checking the identity of a mailing list)
+           HELP
+           QUIT 
+    if there is no such user, we will get back an email with its headers and information
+        send a fake email that you sure thats not available on the server to the mail server to check if there is an active mail server or not because if it returns a reply, we know that email address doesn't exist on the server so we can enumerate all active and exist mail addresses via brute forcing.
+    telnet <server> 25
+    search for SMTP commands (specially VRFY jadi, or EXPN jadi to check if a list of users are active on the server)
+    smtp-user-enum
+        to and email servers
+    problem with open SMTP relays
+        if a server is misconfigured and doesn't check/verify the mail server and the email server, someone is able to send a mail by the mail server as a regular user.
