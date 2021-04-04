@@ -1,0 +1,22 @@
+1. Enumeration is useful to system hacking because it provides which of the following?
+    D: Usernames are especially useful in the system hacking process because they allow you to target accounts for password cracking.
+2. ------------- involves grabbing a copy of a zone file.
+    A: Zone transfers are used to retrieve a copy of the zone file from a server and store it in another location.
+3. Which of the following would confirm a user named chell in SMTP?
+    A: VRFY chell, the verify command, is used within SMTP to verify that the object provided is legitimate.
+4. An attacker can use ------------- to enumerate users on a system.
+    A: NetBIOS can be used to enumerate the users on a system.
+5. ------------- is used to synchronize clocks on a network.
+    B: NTP (Network Time Protocol) is used to synchronize clocks on a network.
+6. Port number ------------- is used for SMTP.
+    A: Port 25 is for SMTP.
+7. Port number ------------- is used by DNS for zone transfers.
+    A: Port 53 TCP is used by DNS for zone transfers.
+8. SMTP is used to perform which function?
+    C: SMTP is primarily intended to transfer email messages from email servers and clients.
+9. SNMP is used to do which of the following?
+    C: SNMP is used to monitor and send messages to network devices.
+10. What is an SID used to do?
+    C: An SID is used to identify a user.
+11. A DNS zone transfer is used to do which of the following?
+    C: A zone transfer is used to synchronize information, namely records, between two or more DNS servers.
