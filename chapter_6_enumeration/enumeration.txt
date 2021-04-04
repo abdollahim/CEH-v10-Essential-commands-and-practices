@@ -18,3 +18,14 @@ All devices do have info:
 
 Here, in this phase we have active connection to the system to get information.
 For legal test projects we should have contract to do this phase!
+
+The information gathered during this phase typically includes, but not limited to, the following:
+    usernames
+    group information
+    passwords
+    hidden shares
+    device information
+    network layout
+    protocol information
+    server data
+    server information
