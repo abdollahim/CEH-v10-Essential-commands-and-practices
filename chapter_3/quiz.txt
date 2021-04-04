@@ -1,28 +1,32 @@
 1: If a device is using node MAC addresses to funnel traffic, what layer of the OSI model is this device working in?
-    B: Layer 2
+    B: A network device that uses MAC addresses for directing traffic resides on Layer 2 of the OSI model. Devices that direct traffic via IP addresses, such as routers, work at Layer 3.
 2: Which port uses SSL to secure web traffic?
-    A: 443
+    A: Port 443 is used for HTTPS traffic, which is secured by SSL.
 3. Hubs operate at what layer of the OSI model?
-    A: Layer 1
+    A: Hubs operate at Layer 1, the Physical layer of the OSI model. Hubs simply forward the data they receive. There is no filtering or directing of traffic; thus, they are categorized at Layer 1.
 4. What is the proper sequence of the TCP three-way-handshake?
     B: SYN, SYN-ACK, ACK
+    Remember this three-way handshake sequence; you will see it quite a bit in packet captures when sniffing the network. Being able to identify the handshake process allows you to quickly find the beginning of a data transfer.
 5. An administrator has just been notified of irregular network activity; what appliance functions in this manner?
     C: IDS
+     Intrusion detection systems (IDSs) react to irregular network activity by notifying support staff of the incident; however, unlike IPSs, they do not proactively take steps to prevent further activity from occurring.
 6. Which technology allows the use of a single public address to support many internal clients while also preventing exposure of internal IP addresses to the outside world?
     D: NAT
+     Network Address Translation (NAT) is a technology that funnels all internal traffic through a single public connection. NAT is implemented for both cost savings and network security.
 7. You have selected the option in your IDS to notify you via email if it senses any network irregularities. Checking the logs, you notice a few incidents but you didn’t receive any alerts. What protocol needs to be configured on the IDS?
     D: SMTP
+    Simple Mail Transfer Protocol (SMTP) operates on port 25 and is used for outgoing mail traffic. In this scenario, the IDS SMTP configuration needs to be updated.
 8. Which of the following describes an attacker who goes after a target to draw attention to a cause?
-    D: Script kiddie
+    C: A hacktivist is an individual or group that performs hacking and other disruptive activities with the intention of drawing attention to a particular cause or message.
 9. Which of the following does an ethical hacker require to start evaluating a system?
-    B: Permission
+    B: An ethical hacker never performs their services against a target without explicit permission of the owner of that system.
 10. Which of the following describes a hacker who attacks without regard for being caught or punished?
-    D: Suicide hacker
+    D: Much like suicide bombers in the real world, suicide hackers do not worry about getting caught; they are only concerned with their mission.
 11. Which type of hacker may use their skills for both benign and malicious goals at different times?
-    B: Gray hat
+    B: Gray-hat hackers are typically thought of as those that were formally black hats but have reformed. However, they have been known to use their skills for both benign and malicious purposes.
 12. Which of the following best describes a vulnerability?
-    C: A weakness
+    C: A vulnerability is a weakness. Worms, viruses, and rootkits are forms of malware.
 13. How is black-box testing performed?
-    A: With no knowledge
+    A: Black-box testing is performed with no knowledge to simulate an actual view of what a hacker would have.
 14. If you have been contracted to perform an attack against a target system, you are what type of hacker?
-    A: White hat
+    A: A white-hat hacker always has permission to perform pen testing against a target system.
