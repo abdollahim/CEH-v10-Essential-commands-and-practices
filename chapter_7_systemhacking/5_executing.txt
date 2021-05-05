@@ -7,16 +7,25 @@ running/executing Backdoors
         Trojans
         Remote access trojans (RAT)
         A famous one is PsTools
+            Utilities like Telnet and remote control programs like Symantec's PC Anywhere let you execute programs on remote systems, but they can be a pain to set up and require that you install client software on the remote systems that you wish to access.
+            
             only need copying and running
                 psexec \\zelda cmd
                 psexec \\zelda -c rootkit.exe #copying
                 psexec \\zelda -u administrator \c rootkit.exe #copy and execute
                 # \\zelda is the name of a sample windows machine.
-        another sample is "DameWare", PDQDeploy, RemoteExec, NetCat
+        DameWare
+            Remote access software for Windows, Mac, Linux workstations, and servers with mobile integration.
+        PDQDeploy
+            PDQ Deploy is a software deployment tool built to help you automate your patch management. You can go from updating your 3rd party software, to deploying scripts, to making useful system changes in almost no time.
+        RemoteExec
+            RemoteExec remotely installs applications, executes programs/scripts and updates files and folders on Windows systems throughout the network.
+        NetCat
+            NetCat is a computer networking utility for reading from and writing to network connections using TCP or UDP. The command is designed to be a dependable back-end that can be used directly or easily driven by other programs and scripts.
     
     when you OWNED a PC, you can run:
         Crackers
-            to find more passwords on that system
+            to find more passwords on that system.
         Keyloggers
             to collect passwords, or other sensitive information.
         Malwares
