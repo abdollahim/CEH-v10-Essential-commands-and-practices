@@ -1,0 +1,23 @@
+running/executing Backdoors
+    if you can run applications, you have got "OWNED" the system.
+    Backdoors will give you access later
+    
+    types:
+        Rootkits
+        Trojans
+        Remote access trojans (RAT)
+        A famous one is PsTools
+            only need copying and running
+                psexec \\zelda cmd
+                psexec \\zelda -c rootkit.exe #copying
+                psexec \\zelda -u administrator \c rootkit.exe #copy and execute
+                # \\zelda is the name of a sample windows machine.
+        another sample is "DameWare", PDQDeploy, RemoteExec, NetCat
+    
+    when you OWNED a PC, you can run:
+        Crackers
+            to find more passwords on that system
+        Keyloggers
+            to collect passwords, or other sensitive information.
+        Malwares
+            to encrypt files, get money, mining, etc.
