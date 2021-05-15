@@ -1,0 +1,16 @@
+Privilege Escalation
+    Horizontal
+        change current user to another user
+    Vertical
+        gaining more access
+    Password change
+        Active@ Password changer
+            it's designed for resetting local Administrators and Users passwords on Windows in case passwords are forgotten or lost. Unlocks locked Accounts & changes Account's attributes. (Like chntpw bootable ISO)
+        Trinity Rescue Kit (TRK)
+            Trinity Rescue Kit or TRK is a free live Linux distribution that aims specifically at recovery and repair operations on Windows machines, but is equally usable for Linux recovery issues. Since version 3.4 it has an easy to use scrollable text menu that allows anyone who masters a keyboard and some English to perform maintenance and repair on a computer, ranging from password resetting over disk cleanup to virus scanning.
+        ERD commander
+            it's a compact NT command-line shell containing a set of 3.5" boot disks that you use to access an unbootable NT system. The software performs a variety of file- and directory-related functions to repair common problems that render an NT system unbootable.
+        Windows Recovery Environment (WinRE)
+            There are two methods to enter WinRE, and you can choose either one to perform it. Type and search [Change advanced startup options] in the Windows search bar①, then click [Open]②. Click [Restart now]③ in Advanced startup section. The system will restart and enter WinRE.
+        Password Resetter
+            Finding safe software that will unlock your Windows password is hard to find. Password Resetter offers you the easiest and safest way to reset your password. Password Resetter recovers 99, 9% of passwords from nearly any Windows installation in matter of seconds. You don't need to know any older passwords in order to crack your windows password. Password Resetter requires no installation in Windows, making it a safe alternative to many other password resetter tools.
