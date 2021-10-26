@@ -1,0 +1,25 @@
+You may need places to hide your data on the hacked servers to use later
+    flagging hidden
+        putting the into a hidden folder/directory.
+    strange places
+        making a new directory in the windows/system32 to store your files included:
+            passwords
+            backdoor's
+            important data
+        Alternate Data Stream (ADS in Windows)
+            this is the part of NTFS and originally created to be used alongside Apple.
+            you can have a two-part file NTFS FORMAT:HFS FORMAT for windows and apple systems you could store different data to be read in different OS's. so, on windows you can only see the first part and on apple you can only see the second part :)
+                you can store your data on the other unfamiliar part to prevent it from detecting that by user !!!
+                even, you can have an executable file that attached to the first part and run it on the machine :D
+                    type triforce.exe > smoke.doc:triforce.exe
+                    start smoke.doc:triforce
+                        it hides triforce app in the smoke.doc and you can run it whenever you want and user can't understand what happens :)
+            There are some applications to find files that have containers attached to detect ADS:
+                SFind
+                LNS
+                TripWire
+    steganography
+        hiding a data behind an other normal data file. the best way is hiding the data behind the image because you cannot see the difference after changing some bits on the millions of bits of the image file!
+        tools:
+            steghide embed -cf picture.jpeg -ef secret.txt
+            steghide extract -sf picture.jpeg
