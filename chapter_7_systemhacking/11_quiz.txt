@@ -1,0 +1,10 @@
+1. ------------- is the process of exploiting services on a system.
+    A: System hacking is intended to increase access to a system.
+2. How is a brute-force attack performed?
+    A: Brute-force attacks are carried out by trying all possible combinations of characters in an attempt to uncover the correct one.
+3. An attacker can use a(n) ------------- to return to a system.
+    A: A backdoor gives an attacker a means to come back to the system later for further attacks.
+4. A ------------- is a file used to store passwords.
+    B: The SAM database is used to store credential information on a local system.
+5. Alternate Data Streams are supported in which file systems?
+    C: Alternate Data Streams are only supported on NTFS. None of the other file systems available in Windows currently support the ADS feature.
