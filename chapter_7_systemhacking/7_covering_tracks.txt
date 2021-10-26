@@ -1,0 +1,25 @@
+Covering tracks
+    Most recent used (MRUs)
+        removing all recent open files and activities after you surfed on the device that you hacked!. There should not anything left behind.
+    Disable auditing
+        Windows
+            auditpol /clear
+            Other tools:
+                Dump Event Log
+                ELSave
+                WinZapper
+                CCleaner
+                    most friendly and popular tool!
+                Wipe
+                MRU-Blaster
+                Tracks Eraser Pro
+                Clear My History
+        Linux
+            unset HISTFILE (History)
+            delete .bash_history
+            check and clear some in /var/log
+                learing some applications log files that you worked on during the hack phase!
+                    Ex: /var/log/secure
+                    you can check the directory files list with ls -ltrh command to see last recent edited/updated files to find out which files has edited/updated!
+                there is an option to send logs to other servers at the time, so you can't clear them with ease!
+            putting space at the beginning of the command line on some distributions to prevent adding the command to the history!
