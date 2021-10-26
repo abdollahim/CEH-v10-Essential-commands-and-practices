@@ -1,0 +1,15 @@
+DHCP starvation attack
+    we send too many Discovers and ips are exhausted.
+    this is so dangerous and network admins ban all IP addresses if they run DHCP servers on their machines!
+        each machine just after starting, send a Broadcast message to the network to tell others that I need an IP because that machine doesn't have any IP address yet and event doesn't know the gateway address to send it a message. after that the gateway send him back a new free IP address.
+    What a hacker do?
+        a hacker can brake current DHCP server and give IP addresses to the machines. so user machines will send al packets to the fake DHCP server. then, it redirect them to the real DHCP server to make a real channel to the network and destination. now, it can be a invisible proxy to see all traffic :D
+    tool
+        yersinia -G
+            it can do different types of attacks.
+        types of attack you can run:
+            sending RAW packet
+            sending Discover packet
+            sending DHCP rogue server
+            sending RELEASE packet
+        now none of machines cannot get IP address from DHCP server because it is too busy to serve all DISCOVER messages received from hacker machine and all IP addresses may offered to the fake messages. so, it can takes few minutes to release IP addresses and new machines can take IP :)
