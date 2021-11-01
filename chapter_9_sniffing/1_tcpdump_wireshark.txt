@@ -1,0 +1,36 @@
+Using a Sniffer
+    Tools (pcap format)
+        wireshark
+            filters
+                == (equal)
+                != (not equal)
+                contains
+                    ip.addr
+                    tcp.port
+                    tcp.stream
+                    ip.src
+                    http contains
+        tcpdump
+            low-level sniffer can save/dump all packets into a file or even split them to a fixe-sized files!
+            commands:
+                tcpdump dst 4.2.2.4
+                    only dump all packets with destination == 4.2.2.4
+                tcpdump -w captures.pcap
+                    writing dumps into a file.
+                    with command 'file captures.pcap' you can find out which type of file it is.
+        windump
+        omnipeek
+        dsniff
+        etherape
+            graphical graph of connections to visualize packets.
+        msn sniffer
+        etc
+    CLI Tools:
+        tshark (cli version)
+        dumpcap (capturing)
+        capinfos (stats about a capture)
+            capinfos captures.pcap
+                get information about capture files ;)
+        editcap (edit or translate format of capture)
+        mergecap (combines captures)
+        text2cap (cap from hex dump of packets)
