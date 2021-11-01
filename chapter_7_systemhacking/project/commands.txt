@@ -1,0 +1,31 @@
+Here we have a file with some data hided!
+
+information we have:
+
+/etc/passwd :
+king-phisher:x:133:142::/var/lib/king-phisher:/usr/sbin/nologin
+kali:x:1000:1000:kali,,,:/home/kali:/bin/bash
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+ali:x:1001:1001::/home/ali:/bin/bash
+
+/etc/shadow:
+king-phisher:*:18288:0:99999:7:::
+kali:$6$jLA.1OwWM1uGyWTJ$xMETR7yrEky/pfF7bSpQ0i36A910R3JrE5c6uiuIQjQFF0gVCO7Hum.zI1lDsEZcjM07syG7B1ggxhtdAW9xN1:18288:0:99999:7:::
+systemd-coredump:!!:18288::::::
+ali:$6$8.fLHG5JLiNUln12$e6ZfyXG1WTrr9E3uV90EF9MEkFtm2hiYUWPl9gnycUcN6.58e1.1oIieTt0hYkczyCh55XbA6TQDejYlrToHF/:18377:0:99999:7:::
+
+we should find the password of the user 'ali' to extract information from the image with steghide tool in kali:
+
+1. putting above data separated into passwd and shadow files.
+2. unshadow passwd shadow > mypass.txt
+3. cd /usr/share/wordlists
+4. sudo gunzip rockyou.txt.gz
+5. john mypass.txt --wordlist=/usr/share/wordlists/rockyou.txt
+  it will find the password of the ali:
+    miller99         (ali)
+6. sudo steghide extract -sf jadi.jpg
+  it will write data into the file called secret.txt
+    wrote extracted data to "secret.txt".
+      content of the secret.txt is => answer: maktab_ceh
+7. putting the answer into 1.txt file and compress that to upload as they said:
+    zip project.zip 1.txt
