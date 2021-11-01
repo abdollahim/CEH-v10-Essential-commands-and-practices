@@ -1,0 +1,30 @@
+Sniffing
+    Wiretapping on network
+        we use the word sniffing because it's on the network!
+    How?
+        Passive
+            only sniffing
+        Active
+            inspect packet and DENY/DROP it!
+            manipulate it
+            do a MiTM on the packets
+        we have to be in promiscuous mode to read all frames (layer 2) and won't filter only for our own MAC.
+            (ifconfig -a) will show if we are in promiscuous mode.
+        MAC flooding (send too many to overflow the CAM)
+            to bypass switch to fill the switch MAC table to get the packets of all machines!
+        DHCP attack
+        ARP poisoning
+        DNS poisoning
+        Spanning on switch
+            port mirroring to get all packets of one port.
+        HTTP, Telnet, Email, FTP, rlogin, POP, IMAP, etc.
+        Software
+            snort
+            winpcap
+            wireshark
+            tcpdump
+            etc
+        Hardware
+            protocol analyzer to sniff network packets.
+    Detection
+        Finding promiscuous interfaces using a Ping to unknown IP and MAC and seeing answers or using NMAP.
