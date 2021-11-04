@@ -1,0 +1,29 @@
+ARP Poisoning/Spoofing
+    Address Resolution Protocol
+        The request will broadcast its MAC+IP toward 00MAC+IP.
+            send Who has 192.....? Tell 192....
+        everyone will check and if it's their IP, they will respond with their MAC+IP.
+            192.... is at 08:2a:.....
+    Problem?
+        sometimes our MAC+IP is saved on the ARP table of other machines in the network. after a while, we moved our IP on another machine with a different MAC address. now, all our packets will send to the old machine with the same saved MAC+IP.
+        What should we do?
+            Gratuitous ARP is like tipping or proxy ARP.
+                it sends a new message/packet that says "this is my new MAC+IP".
+    How?
+        First, we need to understand the ARP.
+        The attacker will send gratuitous to router with its MAC and target IP and another one to the target, telling it its MAC as routers IP.
+            (this is my new MAC+IP)
+    Tools:
+        Ettercap
+        Cain
+        Abel
+        arpspoof
+    We can also do a MAC spoof!
+        we can attack by sending a packet to machines and say that my MAC address in the new MAC address of this IP address we mention in the command to become someone else:
+            arpspoof -i eth0 -t <target machine/user> -r <default gateway IP>
+                it sends the machine MAC as the MAC of the default gateway IP address.
+    Defence solution
+        ARP inspection
+            header and payload verification to check all Source and Destination parameters.
+            ARP ACL
+                access lists from DHCP who knows which IPs assigned to which MACs. 
