@@ -1,0 +1,22 @@
+CAM table and Port security
+    cam table came from Cisco
+    macof utility from dsniff
+        mac table flooding
+            it's so serious and dangerous!
+                it can break the network!
+            macof -i eth0 -> will overflow the MAC and the next packets would be sent to all Ports to work!
+        sending too many packets with different MAC addresses to the switch to fill/replace all MAC table records. so all old records will be gone ;)
+            in old switches, when it doesn't know the Port with requested MAC address, it sends the packet to all ports to make sure it can be delivered to the destination machine, but in the newer switches it can be act like these ways we describe below:
+    if we turn on port security on a Port, this will be resolved
+        there are some steps when we get MAC address beyond our limit (say 5):
+        P: protect
+            it can accept only a few number of MAC addresses from each Port.
+        R: protect + sending alerts and messages (syslog, counter, snmp, etc.)
+            plus above, it will send a log!
+        S [default]: shutdown the Port
+            it deny/shutdown that Port immediately!
+                don't play with this type of attack on the real network!
+        S: shutdown the whole vlan
+            so dangerous!
+        How?
+            to turn on Port security you will go to the switch and in config mode, will do a "switchport port-security maximum 5" on that Port and "switchport port-security violation restrict" and enable the feature "switchport port-security" and check with "show port-security".
