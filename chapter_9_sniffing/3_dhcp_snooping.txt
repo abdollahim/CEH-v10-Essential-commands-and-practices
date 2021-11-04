@@ -1,0 +1,30 @@
+DHCP Snooping
+    DHCP
+        Discover
+            sending a Discover message/packet. (broadcast message to send to everyone to find someone who has an IP to offer!)
+        Offer
+            someone tell the machine Do you want this IP?
+        Request
+            send a Request to get this IP.
+        Acknowledge
+            send back an Ok.
+    This can happen by mistake or by a plan!
+        you can have a DHCP server at yours and other machines take IP addresses from you instead of the real DHCP server! in this case you can block by DHCP server or others from getting IP or even your Port can be blocked!
+    How?
+        at first, we will do DHCP starvation attack. (or DHCP flooding!)
+            sending Discover message/packet with all 255 IP addresses in that range.
+            then DHCP server send back Offer message/packet
+            now, we don't answer to the Offer messages/packets.
+            this phase is done.
+        then our DHCP server can also work as a router
+            now, we run our DHCP server because in this time real DHCP server doesn't have any free IP addresses to Offer so we can give IP addresses to all requester and act as a real DHCP server ;)
+        Sniffing, MiTM, etc.
+            after all above, we  can be the Gateway of all machines that took IP addresses from us and we can Sniff all their packets!
+    on Wireshark you can see this by filtering for "bootp"
+        DHCP packets was bootp in the past.
+        Fix?
+            we can fix this with enabling port security we discussed in the previous file.
+    Defense?
+        switch untrusted ports can have DHCP server type messages on No, just like a Firewall.
+            closing all Offer and Acknowledge messages/packets on the untrusted ports on the switch except one main port to the backbone ;)
+                That's all.
