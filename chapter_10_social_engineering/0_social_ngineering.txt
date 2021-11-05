@@ -1,0 +1,24 @@
+Social Engineering
+    It's the most commonly used attack on the most important companies in the world!
+    It's one of the most dangerous risks!
+        you can't make your company safe against these types of attacks !
+    Tricking people to give us what we want!
+        by Email, Link (phishing), Phone (Vishing), etc.
+    Why does it work?
+        we want to trust others
+        ignorance
+        fear
+            something bad is going to happen if you don't listen to me.
+        greed
+        moral obligation (helping)
+        social proof (peer pressure)
+        authority
+        linking someone to get information
+    Risks?
+        insufficient training
+        lack of control
+            technical control
+            administrative control (dual signature, forced off days so other people will see the problem, etc.)
+            physical control
+        large companies have more problems
+        lack of policies
