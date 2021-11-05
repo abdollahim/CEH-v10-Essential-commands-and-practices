@@ -1,0 +1,25 @@
+Attacks
+    physical
+        friendship
+    phishing
+        tricking everyone
+        targeting someone special!
+    smishing
+        SMS phishing
+    vishing
+        voice phishing
+    cloning sites
+        like:
+            winhttp
+            wget
+    rouge sites
+        like trojans
+    wifi vector
+        free account
+            offering free internet to capture all their activities!
+        wifi phisher
+            send death/deauthenticate packets to the real wifi.
+            then offer himself as a real wifi.
+                showing a fake page as an update page or something to get a wifi passwords from victim users!
+        setoolkit
+        etc.
