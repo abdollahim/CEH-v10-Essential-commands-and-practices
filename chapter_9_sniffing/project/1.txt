@@ -1,0 +1,28 @@
+cdts3500
+cdts3500
+
+qgpl/apkeyf.apkeyf
+Retrieving member APKEYF in file APKEYF in library QGPL.
+File transfer completed successfully.
+
+---------------------------------------------------------------------
+
+220-QTCP at fran.csg.stercomm.com.
+220 Connection will close if idle more than 5 minutes.
+USER cdts3500
+331 Enter password.
+PASS cdts3500
+230 CDTS3500 logged on.
+SYST
+215  OS/400 is the remote operating system. The TCP/IP version is "V5R2M0".
+SITE NAMEFMT
+250  Now using naming format "0".
+PWD
+257 "CDTS3500" is current library.
+PASV
+227 Entering Passive Mode (10,20,144,151,62,141).
+RETR qgpl/apkeyf.apkeyf
+150 Retrieving member APKEYF in file APKEYF in library QGPL.
+250 File transfer completed successfully.
+QUIT
+221 QUIT subcommand received.
