@@ -1,0 +1,42 @@
+Phases
+    Research on targets
+        Tools/ways:
+            Dumpster
+            websites
+            employees
+            tour the company
+            etc.
+    Choose the Victim
+        find someone who has/is:
+            more kind
+            more access to something you want/need
+            idiot
+            etc.
+    Build a relationship (physical or digital)
+        friendship
+        facebook request
+        chat
+        etc.
+    Exploit relationship
+
+    We should have
+        incident handling (report to whom if happened)
+            we have it for some other types of attacks in companies, but we should have it for when:
+                someone is tricked
+                losing information
+                giving passwords to someone
+    Terms
+        impersonation
+            ack like someone else!
+        shoulder surfing
+            watching details/passwords from behind of others
+        tailgating/piggybacking
+            entering to a company quickly when someone opens a door.
+        biometrics
+            finger
+            iris
+            retina
+            face
+            voice
+        baiting
+            offering free stuff
