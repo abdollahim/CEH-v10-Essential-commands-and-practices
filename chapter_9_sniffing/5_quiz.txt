@@ -1,0 +1,16 @@
+1. Wireless access points function as a -------------.
+    A: All wireless access points are essentially hubs in that they do not segregate traffic the way a traditional wired switch does.
+2. What mode must be configured to allow an NIC to capture all traffic on the wire?
+    D: An NIC must be configured to operate in promiscuous mode to capture all traffic on the network. More specifically, it allows the interface to capture both traffic that is intended for the host and traffic that is intended for other clients.
+3. Bob is attempting to sniff a wired network in his first pen test contract. He sees only traffic from the segment he is connected to.
+    What can Bob do to gather all switch traffic?
+    A: Bob can launch a MAC flooding attack against the switch, thereby converting the switch into a large hub. If successful, this will allow Bob to sniff all traffic passing through the switch.
+4. What technique funnels all traffic back to a single client, allowing sniffing from all connected hosts?
+    B: ARP poisoning alters ARP table mappings to align all traffic to the attacker’s interface before traveling to the proper destination. This allows the attacker to capture all traffic on the network and provides a jumping-off point for future attacks.
+5. Jennifer is using tcpdump to capture traffic on her network. She would like to save the capture for later review. What command can Jennifer use?
+    D: Tcpdump uses the option –w to write a capture to a log file for later review. The option –r is used to read the capture file, or the capture can be opened in a GUI-based sniffer such as Wireshark.
+6. What is the generic syntax of a Wireshark filter?
+    A: Wireshark filters use the basic syntax of putting the protocol first followed by the field of interest, the operator to be used, and finally the value to look for (tcp .port == 23).
+7. What device will neither limit the flow of traffic nor have an impact on the effectiveness of sniffing?
+    A: A hub cannot limit the flow of traffic in any way, meaning that all traffic flowing through the hub can be viewed and analyzed.
+        Switch is the device that can do that.
