@@ -1,0 +1,17 @@
+Prevention
+    Education and Training!
+    Separation of duties
+        to watching their activities.
+    Rotation of duties
+        changing roles (changing minds)
+    Controlled access
+        access lists
+    Logging and Auditing
+        keep tracking of anything!
+    Policies
+        ex: can someone plugging their charger into your power outlet?!
+        etc.
+    Not keeping sensitive data
+        on dropbox for example.
+    archive
+        backup
