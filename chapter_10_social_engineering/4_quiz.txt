@@ -1,0 +1,13 @@
+1. Phishing takes place using -------------.
+    B: Phishing is performed using email to entice the target to provide information of a sensitive nature.
+2. What is the best option for thwarting social-engineering attacks?
+    B: Training is the best and most effective method of blunting the impact of social engineering. Addressing the problem through education can lessen the need for some countermeasures.
+3. A security camera picks up someone who doesn’t work at the company following closely behind an employee while they enter the building.
+    What type of  attack is taking place?
+    D: This attack is called tailgating and involves a person being closely followed by another individual through a door or entrance.
+4. In social engineering a proxy is used to -------------.
+    C: An attacker could keep their activities masked and covered up to prevent themselves from being discovered.
+5. Jason notices that he is receiving mail, phone calls, and other requests for information.
+    He has also noticed some problems with his credit checks such as bad debts and loans he did not participate in.
+    What type of attack did Jason become a victim of?
+    C: This attack is most likely a result of identity theft. The information to carry out this attack may have been obtained through the use of techniques such as phishing or social engineering. However, those techniques can be used for other attacks as well and not just identity theft.
