@@ -1,0 +1,29 @@
+DOS (Denial of service)
+    Understanding
+        Disable resource
+            like sending requests to webpages more than requests it supports!
+        Disable infrastructure
+            like sending many requests to the server, switches, OSs, firewalls, and etc.
+    Signs
+        Unavailable resource
+            destination can't reachable!
+        Loss of access
+            losing access to the servers, SSH, database, and etc.
+            delay to response requests like logging into the systems!
+        Slow
+    DDOS
+        Zombies
+    DOS Tools
+        DoSHTTP
+        UDPFlood
+        Jolt2
+        Targa
+        Hping3
+    DDOS Tools / Botnet Tools
+        Shark
+        PlugBot
+        Poison lvy
+        LOIC
+        Trinoo
+        TFN2K
+        Stacheldraht
