@@ -1,0 +1,24 @@
+Prevention
+    On WASP session management is always there
+        It's always High-risk attacks on the OWASP top ten!
+    Physical
+        prevent Sniffing, enabling Port-security, etc.
+    Application Layer
+        Good Session IDs
+            Not predictable and not calculable
+        Never use URLs with Session IDs
+            to prevent CSRF, Referrers, forwarding URL-based attacks, etc.
+        Don't reuse Session IDs
+        Flag Cookies as HTTP only
+            no access to JS
+        Flag Cookies as Secure
+            only HTTPS
+        Using TLS/SSL/HTTPS
+        Re-Auth
+            after a while/IDLE time/inactivity
+        Invalidate Tokens-based on inactivity and time
+        OAUTH
+        Forced logouts
+            after a while or by what the user is doing on the website.
+        Multi-factor logins
+            like two-step Authentication
