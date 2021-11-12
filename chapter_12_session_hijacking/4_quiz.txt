@@ -1,0 +1,14 @@
+1. Which statement defines session hijacking most accurately?
+    C: Session hijacking focuses on the victim’s session. There are different ways of accomplishing this task, but the basic concept is the same. Be sure to know what constitutes a session hijack; the exam will expect you to be able to recognize one at first glance.
+2. Jennifer is a junior system administrator for a small firm of 50 employees.
+    For the last week a few users have been complaining of losing connectivity intermittently with no suspect behavior on their part such as large downloads or intensive processes. Jennifer runs Wireshark on Monday morning to investigate. She sees a large amount of ARP broadcasts being sent at a fairly constant rate. What is Jennifer most likely seeing?
+    A: An excessive number of ARP broadcasts would indicate an ARP poisoning attack. The users’ reporting loss of connectivity may indicate an attempted session hijacking with a possible DoS attack.
+3. Julie has sniffed an ample amount of traffic between the targeted victim and an authenticated resource.
+    She has been able to correctly guess the packet sequence numbers and inject packets, but she is unable to receive any of the responses. Whatdoes this scenario define?
+    D: The key portion of the question is that Julie is not receiving a response to her injected packets and commands. Although the sequence prediction does relate to TCP hijacking, the best answer is blind hijacking.
+4. Session hijacking can be performed on all of the following protocols except which one?
+    D: IPSec is designed with many goals in mind; one of them is that it is not as vulnerable to session hijacking as the other protocols and services listed here.
+5. Session fixation is a vulnerability in which of the following?
+    A: Web applications can be vulnerable to session fixation if the right conditions exist. Typically, this means that session IDs are not regenerated often enough or can be easily ascertained.
+6. A man-in-the-middle attack is an attack where the attacking party does which of the following?
+    C: A man-in-the-middle attack occurs when the attacking party inserts themselves into the communication between two different parties.
