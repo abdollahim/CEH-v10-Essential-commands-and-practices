@@ -1,0 +1,8 @@
+Session Hijacking
+    we have it because we don't want to enter username/password before all requests we send to the server!
+        we need to keep a valid session during we are working on the server!
+    It's like hijacking/using ATM just after someone entered their password!
+    Hijack the session just after Authentication
+    Can happen on network Level or Application Level
+    People do not want to re-authenticate on every single HTTP/TCP request
+        Applications do have persistence methods. Say Cookies, Specific URLs, Hidden form fields, session IDs, token, etc.
