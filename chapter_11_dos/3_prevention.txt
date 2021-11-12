@@ -9,6 +9,8 @@ Prevention
                 even as a Hacker we can use all of this to know what types of attacks are available out there to use ;)
             provided by different companies like Cisco
         NOP is 0x90
+            0x90 is the hexadecimal value of a NOP instruction for Intel-based systems.
+            Remember to keep an eye out for this value; it indicates a NOP and possibly a NOP sled, which could indicate a buffer overflow condition in progress.
         UTM/IPS can have reputation-based filtering
             automatically detect/prevent some attacks:
                 SYN attacks
