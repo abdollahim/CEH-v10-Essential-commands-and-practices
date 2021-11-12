@@ -1,0 +1,52 @@
+Application Layer
+    HTTP
+        it can be called a Token or Session ID (Ses ID) to keep your verification token while we are using the Application!
+        it needs some kind of persistence layer to store:
+            Cookies
+                we can log in instead of the real person if we can get the valid Session information like what is stored in the Cookies before they change or renew by the user/victim!
+            Custom URLs
+                very dangerous because we can see it and even forward it or hijack it to reuse!!!
+            Hidden form fields
+                it's very dangerous because we can see/change them on the browser!!!
+            Session IDs
+            Token
+            etc
+        in the past, some tools like Fire-Sheep could watch the network and store all Facebook SIDs because at that time, Facebook only used HTTPS in the login page and all other requests were transferred via HTTP!
+        Finally, whoever gets this information we mentioned above, will be known as the Authenticated/Validated user!
+    How to get it?
+        sniffing and resending
+        MiTM
+        Referrals
+            we can forward/send a specific URL of a website that stores Token or any sensitive information in the URL to my server and collect all login/sensitive information of all users/victims ;)
+        Brute force to find Session IDs
+            find other valid sessions with guessing other values
+                they may be alphabetic/in order/numeric values stored in the Cookies.
+        Session fixation
+            create the URL with session ID and share.
+            In this case, the website only validates the Fixed session after the user is logged in and it doesn't renew the Session ID after Authentication!
+                so we can find the Session and make sure whenever the user logs in, we are Authenticated/Validated too and we can use the website instead of that user/victim ;)
+        Session donation
+            login into the website, create a fake account, and share the link with others. if they have logged in so they will use it!
+                the victim will use the account that the attacker forwarded/sent to him and this is how the attacker can Donate a Session to the user/victim ;)
+        XSS
+            Stored
+                stored in the Database to use later and it can be persistent and be a permanent XSS ;)
+            Reflected
+                it can be shown to a user/victim and not be permanent and stored in the Database!
+            Bob logged in on a website with cookies. the attacker sends a script to bob. when it runs, it will send a request to the website to download something using the same Cookie.
+        Malware
+            searching for valid Sessions in the user/victim computer ;)
+        Bad extensions
+            How?
+                Some extensions keep searching in the browser Cookies to find Sessions of for example Bitcoin wallet websites and send them back to the attacker to log in to the wallets instead of user/victim ;)
+                Doing even MiTM attacks:
+                    manipulating requests when you are sending them to different websites or any!
+        API hooking
+        Come from log files!
+            there is a change to store Sessions or any in the server Logs!
+        Active Hijacking
+            doing any whenever the user is working with a website!
+        Passive Hijacking
+            collecting information to user later!
+        Blind Hijacking
+            attacker can't see the result of the requests!
