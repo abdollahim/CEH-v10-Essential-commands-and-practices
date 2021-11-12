@@ -1,0 +1,9 @@
+Network Layer
+    TCP/IP
+        if you can find the sequence number, you can inject packets with source IP spoofing or even DOS on the main user.
+    DNS
+        spoofing
+            like redirecting Facebook traffic to your own server instead of the real Facebook server and responding to all user traffic on your own side!
+            in Phishing, you will see/be redirected to a different URL on your browser, but here you see the real correct URL :D
+    UDP
+        answering quicker than the server or other ways to trick the victim to think that you are the server.
