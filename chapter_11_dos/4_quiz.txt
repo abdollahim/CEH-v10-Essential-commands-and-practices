@@ -1,0 +1,15 @@
+1. Which DoS attack sends traffic to the target with a spoofed IP of the target itself?
+    A: A land attack fits this description. Smurf Attacks deal with ICMP echo requests going back to a spoofed target address. SYN floods use custom packets that barrage a target with requests. Teardrop attacks use custom fragmented packets that have overlapping offsets.
+2. Zombies Inc. is looking for ways to better protect their web servers from potential DoS attacks.
+    Their web admin proposes the use of a network appliance that receives all incoming web requests and forwards them to the web server. He says it will prevent direct customer contact with the server and reduce the risk of DoS attacks. What appliance is he proposing?
+    C: Reverse proxies are implemented to protect the destination resource, not the client or user. In this scenario, a reverse proxy will field all outside requests, thereby preventing direct traffic to the web server and reducing the risk of a DoS attack.
+3. What command-line utility can you use to craft custom packets with specific flags set?
+    D: Although the Nmap and Zenmap utilities can activate specific TCP flags based on the custom scan desired, the hping3 utility was designed for creating custom packets and manipulating TCP flags.
+4. What protocol is used to carry out a fraggle attack?
+    C: UDP is the protocol that is used to carry out a Fraggle Attack. ICMP plays a role in ping floods, which are a different type of attack. TCP and IPX do not play any role in this type of attack.
+5. What is the main difference between DoS and DDoS?
+    B: The main difference between the two types of attacks is the number of attackers. The goal is the same and the scale is different but hard to define. Protocols have no bearing and are irrelevant.
+6. What is the most common sign of a DoS attack?
+    C: Although any of these options could be symptomatic of a DoS attack, the most common is slow performance.
+7. What response is missing in a SYN flood attack?
+    A: During a SYN flood, the last step of the three-way handshake is missing, which means that after the SYN and SYN-ACK are performed, the final ACK is not received.
