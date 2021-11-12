@@ -1,0 +1,57 @@
+DOS Types
+    Layers based on the OSI model
+        Layer 1: Physical layer
+        Layer 2: Data link layer
+        Layer 3: Network layer
+        Layer 4: Transport layer
+        Layer 5: Session layer
+        Layer 6: Presentation layer
+        Layer 7: Application layer
+    Physical attacks
+        access to the systems, networks, PCs, and something like them to break the responsibility!
+    Fragmentation
+        packets are sent via different fragments. so we can skip some fragments and keep the server busy to wait for other lost fragments!
+            server can't rebuild packets. Layer 4
+    TCP-STATE exhausting
+        just sending SYN. then it sends back an SYN-ACK, but we don't send the rest of the packets to initiate a session!
+            it waits for receiving the rest of the packets for a while, but there aren't any!
+        just sending FIN to a web server that we do have not any connection to!
+            it sends us back an RST packet. we can do it more and more to make it busy!
+    UDP flooding
+        when we are sending a packet to a closed port, the server sends us back an answer that it's Closed!
+            forcing a lot of destination unreachable answers. Layer 4
+    DNS, NTP, SSDP, SNMP, SMTP, and etc.
+        forcing the server to answer all of our unrelated requests!
+    ICMP
+        sending too many ICMP requests to make it busy to answer all of them!
+            hping flood
+            ping of death (large) (RFC 791)
+                ping packets can be from 56 bytes to 65.535 bytes!
+                you can check the network quality by sending large ping packets and receive their answers!
+                all systems have a buffer[65.535] to store the ping packet.
+                    we can send a ping packet with more than 65.535 bytes to make a buffer overflow on that ;)
+                        because of this, we call it ping of death!
+                    it's almost resolved ;)
+    SMURF
+        reverse ICMP flood
+            sending an ICMP request with a fake SRC IP address to a server. then that server sends back an ICMP REPLY to the sender!
+                think if we send a BROADCAST ICMP request from a fake SRC in the network
+                    each system wants to send back a REPLY to that sender ;)
+    Fraggle
+        SMURF with UDP
+    LAND
+        sending traffic to the target with its own source!
+            make it busy with an unfinished loop with itself :D
+    PDOS
+        permanent DOS!
+            Phlashing
+                like updating the firmware of a switch remotely with a bad file to make it brick! (make it out of service)
+    Social media
+        at ease, we can refresh a webpage at the same time with a more than a million people!
+        for a more complex example, we can ask the server to send us back statistics of the last two months of network usage :D
+            ask people to attack using LOIC or just JS LOIC
+    Application Layer
+        for example, say requesting large searches
+    Volumetric
+        too many requests
+    Buffer overflow
