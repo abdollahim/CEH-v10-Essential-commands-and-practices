@@ -1,0 +1,48 @@
+Prevention
+    Tools
+        Reduce attack surface
+            disabling unused services/ports
+            whitelisting
+            closing unrelated/unused URLs or paths
+        DDOS runbook checklist
+            everything you may need to prevent DDOS attacks
+                even as a Hacker we can use all of this to know what types of attacks are available out there to use ;)
+            provided by different companies like Cisco
+        NOP is 0x90
+        UTM/IPS can have reputation-based filtering
+            automatically detect/prevent some attacks:
+                SYN attacks
+                Deny FIN attacks when you do have not any established connection with that server!
+                Deny suspicious packets/strings like SQLi commands
+                Reputation-based filtering
+                checking spam IPs based on the international IP lists
+        Rate limiting/throttling
+            like limit connection numbers in webserver
+            limiting how many answers you should send back!
+        Reverse proxy
+            you might want to have a Reverse proxy like Nginx to process and make limitations on all receiving packets from the network then forward them or ask them from the main web server like Apache and pass the answer to the user/network!
+                even caching, rate limiting and etc.
+        TCP intercept
+            The firewall can reply to SYN and forward to the server when there is a valid connection
+        Web application filtering (WAF)
+            check everything on the Application Layer.
+                like Fail2ban
+            it will check if the request is valid and not fishy!
+            WAF can do the HTTPS termination
+    Design
+        Load Balancing / Application Delivery Controller
+            like BigIP F5
+                forwarding traffic to different servers by different methods ;)
+    Development
+        Sandboxing on application
+            separating Databases, Web servers and etc.
+            it will prevent one DOS from drowning everything.
+        Having challenges
+            Captcha
+            Validate browser with JS
+                like sliders to pushing with a mouse on the screen to detect you are a human!
+                like google photo ReCaptcha!
+        There are cloud services for preventing and attacking
+            it provided/sold as Jmeter / Hulk / IP Stressors / DDOSer / Booter / ways you can find in the Dark web
+                like Cloudflare, AbrArvan
+                    checking security problems or even doing all encryption algorithms like TLS and passing with you in plain HTTP!
