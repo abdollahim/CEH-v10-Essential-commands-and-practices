@@ -1,0 +1,27 @@
+OWASPBWA
+    Training applications
+        bWAPP
+            you can set the difficulty level
+            different attacks like:
+                Command injection
+                SQL injection
+                etc
+        WebGoat
+        RailsGoat
+    Realistic vulnerable applications
+        Vicnum
+            vulnerable guessnum application that store the correct answer in the hidden field as a Base64 encoded value that we can reverse it!
+        Peruggia
+            you can do path traversal or even showing file content of the system via the page learn.
+                like:
+                    /etc/passwd
+                    /etc/hosts
+        etc
+    Old versions of applications
+        Wordpress
+        Joomla
+        AWStats
+        OrangeHRM
+        etc
+    Applications for testing tools
+    Demonstration pages/small applications
