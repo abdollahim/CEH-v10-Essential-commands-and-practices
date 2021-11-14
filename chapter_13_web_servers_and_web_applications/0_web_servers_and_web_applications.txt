@@ -1,0 +1,49 @@
+Web Servers and Web Applications
+    Purpose
+        we have millions of websites around the world so they're so easy targets to hack even without any permission!
+        it has different parts and details so it can help it to be more vulnerable ;)
+    Details
+        Admins or Admin area
+        Databases
+        Users
+        etc
+    Client-Server Architecture
+    Web Servers
+        Apache
+        IIS
+        Nginx
+    Web Applications
+        Types
+            Browser-Based
+                it's actually on the Server!
+            Client-Based
+                working by sending/receiving requests to/from the Server!
+            Mobile Applications
+                it can be even like a Browser to show you the content. you think it's a mobile app!
+        Layers
+            Presentation Layer
+                user interface
+                    what user see
+            Logic Layer
+                functional layer
+            Data Layer
+                the layer is implemented to work with the Database.
+    Cloud Applications
+        Infrastructure as a service (IaaS)
+            like the websites, you go to buy a VPS.
+        Platform as a service (PaaS)
+            like heroku.com to run your code. it has already all services and programs you need for your project!
+            here, it's more secure because in the first one you need to do all your configuration and human misconfiguration increases, but in this one, you have a safe pre-configured platform ;)
+        Software as a service (SaaS)
+            like online Office, Google docs, and etc.
+    Parts
+        Cookies
+        Login
+        Web Server
+        Sessions
+        Permissions
+        Content
+        Data Access
+        Data Store
+        Logic
+        etc
