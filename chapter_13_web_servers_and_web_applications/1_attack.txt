@@ -1,0 +1,61 @@
+Attack
+    Problems
+        Buffer Overflow
+            as we said before, filling memory more than how many bytes we must put!
+        DOS / DDOS
+            Spoofing
+            Smurf
+            DNS
+            ARP
+            etc
+        Reveal data
+            Error messages
+                we should handle errors
+                    user should not see any Server details
+        Misconfiguration
+        Input validation
+            validating data to get what data you must get!
+            check them on the server-side, not client-side or only client-side!
+            etc
+        XSS
+            Stored
+            Dom-Based
+            Reflected
+                reflect the XSS scripted we have injected to the other users to run on their home browsers/machines ;)
+            etc
+        Injection
+            SQL Injection
+            Command injection
+            File injection
+            etc
+        Upload Bomb
+            File uploading
+                upload malicious/dangerous/big... files to do any on th Server.
+        Defaults
+            Username / Passwords
+            configuration
+            Ports
+            URLs
+            etc
+        Session management issues
+        Encryption problems
+            don't write and use your own encryption algorithm. it never can be better than most used ways!
+            Ols SSL/TLS versions
+                SSL v1, v2
+                don't use reversible algorithms like Base64!
+                etc
+        Directory traversal
+            go to other directories via address or URL.
+        Directory listing
+            close all directory listing!
+        etc
+    Tools
+        Burp Suite
+            Spider
+            Scanner
+            Intruder
+            Repeater
+            etc
+        Vega scanner
+
+Hint: all of the above titles are an unlimited world to learn and work in. here we only give some names ;)
