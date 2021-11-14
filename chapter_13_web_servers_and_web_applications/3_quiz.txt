@@ -1,0 +1,10 @@
+1. Which of the following best describes a web application?
+    B: A web application is code designed to be run on the server with the results sent to the client for presentation.
+2. ------------- is a client-side scripting language.
+    A: JavaScript is a client-side scripting language as opposed to languages such as ASP and ASP.NET.
+3. Which of the following is used to access content outside the root of a website?
+    D: Directory traversals are used to browse outside the root of the site or location and access files or directories that should otherwise be hidden.
+4. What is used to store session information?
+    A: A cookie is used to store session information about browsing sessions and is a file that resides on a client.
+5. A common attack against web servers and web applications is -------------.
+    D: Buffer overflows are a common flaw in software that typically can be fixed only by a software engineer.
