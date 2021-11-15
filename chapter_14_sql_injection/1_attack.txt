@@ -1,0 +1,33 @@
+Attack
+    Anatomy of a Web Application
+        some web pages that interact with the Server and Database to respond to the client!
+    Insertion of characters into existing SQL commands
+    Types depend on the Database, but ;.'"--,/*comments*/ are some of the breaking characters!
+    Samples
+        ' in username or 1=1
+            SELECT * FROM USERS WHERE USERNAME='$USER' AND PASSWORD='$PASS';
+                but attacker enter:
+                    ' OR 1=1 ;-- (or 20>1 to avoid string matching/filtering in Firewall or something!)
+                        it will login in this scenario!
+                        or this:
+                            or /* test*/ 1= /* test */ 1;--
+    Return Types
+        Error-Based
+            if you will be able to create errors, you might see some information!
+        Union-Based
+            piggyback other data
+                run a query to add some data and show once
+                    like names with passwords and etc!
+        Blind
+            run commands without getting any output/result. sometimes attackers use the time to see if it worked or not!
+            sometimes it may be dropped!
+                ;(IF EXIST (SELECT * FROM users) WAITFOR DELAY '0:0:10'-)
+        Avoid detection:
+            by 20>1 instead of 1=1
+            HEX
+            spaces
+            comments in the middle
+            obfuscation
+            etc
+        How to attack?
+            find a SQL path and try and try once you get in ;)
