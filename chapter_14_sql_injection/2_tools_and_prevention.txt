@@ -1,0 +1,32 @@
+Tools and Prevention
+    Tools
+        Burpsuite
+            show the requests
+                tampering data
+            automating checks
+            etc
+        Havij
+        Netsparker
+        Nessus
+        Openvas
+        Acunetix
+        Zap
+        OWASP Tools
+            Search for testing for SQL injection
+        etc
+    Prevention
+        Checking/Validating all inputs
+            URLs
+            Post
+            any other type of input!
+        Using well-known libraries/components
+        Firewall can send data to a Web Application Firewall/IDS/IPS
+            like WAF in the Application Layer
+        Have well-stored procedures and only answer via them
+        Correct rights
+            No need to run any system commands from the Database or give drop right to the Web User
+            Separating access rules to different users, not assign all rights to all users or even one user!
+        Logs
+            Check all Log files to find who is trying to run a SQL injection attack or get access to the system or any!
+        Backup
+            always have backup files, but it can be dangerous if it can be leaked or be manipulated by the attacker ;)
