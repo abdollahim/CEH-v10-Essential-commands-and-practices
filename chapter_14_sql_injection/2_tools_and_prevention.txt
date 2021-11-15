@@ -1,6 +1,6 @@
 Tools and Prevention
     Tools
-        Burpsuite
+        BurpSuite
             show the requests
                 tampering data
             automating checks
