@@ -1,0 +1,11 @@
+SQL Injection
+    Types
+        RDMS
+            like Excel, spreadsheets, access, etc.
+        SQL
+    Used for altering tables or bypassing checks or breaking sites or stealing data or something.
+        you can even run low-level system commands from the Database if the option was selected in the configuration of the Database!
+    It's Complex
+        Database + Web App + SQL
+    CEH is not a SQL course, you should know it!
+    Mostly caused by flaws in applications (especially unchecked input) and is responsible for many of the famous attacks!
