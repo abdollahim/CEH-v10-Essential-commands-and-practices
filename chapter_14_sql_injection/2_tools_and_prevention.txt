@@ -10,6 +10,8 @@ Tools and Prevention
         Nessus
         Openvas
         Acunetix
+        SQLmap
+        SQLNinja
         Zap
         OWASP Tools
             Search for testing for SQL injection
