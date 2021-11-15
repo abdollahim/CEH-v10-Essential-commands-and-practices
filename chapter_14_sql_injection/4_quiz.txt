@@ -1,0 +1,14 @@
+1. Input validation is used to prevent which of the following?
+    A: Input validation is intended to prevent the submission of bad input into an application, which could allow SQL injection to take place.
+2. Which of the following challenges can be solved by firewalls?
+    B: Firewalls can prevent the scanning of systems and the probing or discovery of a database.
+3. Databases can be a victim of code exploits depending on which of the following?
+    A: Databases can be a victim of source code exploits, depending on their configuration and design.
+4. Which command can be used to access the command prompt in SQL Server?
+    C: The xp_cmdshell command is available in all versions of SQL Server and can be used to open a command shell. The command has been disabled in current versions of the product, though it is still available to be enabled.
+5. Which command is used to remove a table from a database?
+    D: The drop table command is used to remove a table from a database. This command deletes a table from the database.
+6. What can an error message tell an attacker?
+    D: Error messages can reveal success of an attack, failure of an attack, structure of a database, as well as configuration and other information.
+7. A blind SQL injection attack is used when which of the following is true?
+    A: When error messages are not descriptive or not available, a blind SQL injection attack can be used to ascertain information from performance or indirect observations.
