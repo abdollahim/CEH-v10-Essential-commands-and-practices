@@ -4,7 +4,7 @@ Hidden SSID
         Start Wireless monitoring
             airmon-ng
         Discover the APs
-            airdump-ng
+            airodump-ng
         Wait for associations or use
             airreplay-ng
         Module 92 of CBT
