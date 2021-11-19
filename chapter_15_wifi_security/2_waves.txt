@@ -1,0 +1,34 @@
+Waves
+    Frequencies
+        1Hz, 1KHz, 1MHz
+        802.11
+            2.4GHz, 5GHz
+    Wavelengths
+        length of one cycle
+    Energy
+        The amplitude or how tall the wave is
+    Problems
+        Path loss/free path loss
+            because of its long length, it can lose energy
+        lead
+            something in front of the signal like a wall!
+        scattering
+        reflection
+        fade
+        long-range atmosphere refraction
+        multipath
+            the location we put it in the place!
+                it can be different to send a signal to the receiver.
+        noise
+        etc
+    RSSI (Received signal strength indicator)
+        awful to high quality: -100 to 0
+            when we contact to the service provider to check our network quality, they check this to check our line quality. the network quality icon on the system shows this number too ;)
+    SNR (RSSI - Noise)
+        it should be high to have more signal and lower noise ;)
+    Frame types
+        different than 802.3 (ETH) because we should have Collision Avoidance (instead of Collision Detection)
+            Management
+                SSID share beacons
+            Control frames
+                We send RTS (request to send) and will send we get CTS (clear to send)
