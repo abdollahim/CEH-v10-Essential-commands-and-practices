@@ -1,0 +1,39 @@
+Fundamentals (Jargon)
+    Vocabularies are huge!
+    Ad-Hoc mode (peer to peer)
+        Definition
+            each system can connect to each system that wants not via a central point!
+        BSS (Basic service set)
+            it needs an area to cover all systems that want to speak together!
+                the problem is that we can't make such a big network/area to use this!
+        IBSS (Independent BSS. no other device)
+            it's not a dependent network like star topology and all systems can speak to every system that is in the same area (BSS)!
+        Half-Duplex
+            Ad-Hoc networks are Half-Duplex
+                they can't send/receive simultaneously
+    Infrastructure mode (like Star topology)
+        AP (Access point. Hotspot)
+            sharing network for another devices/acting like an AP for other devices.
+        BSA (Basic service area or cell)
+            network cell
+        SSID (Service set identifier system)
+            the name of the network.
+        There is a DS (Distribution System) which connects the wireless connection to other systems
+            like router
+            central device to connect devices to another network!
+        Channels are important
+            Auto
+                devices in Auto mode search for a free channel and use it!
+                    because of this, we can't use more than 12 routers in the place because they must make conflicts with each other on the same channels ;)
+                        we should configure them as Auto or config them manually on different channels to prevent conflict!
+                like 1, 3, 5, and etc.
+            they should not interfere
+                you can't have two networks with the same channel number on the same frequency in one place!
+                    it can cause making conflicts!
+    Controller (Wireless LAN controller)
+        Can push configs to the APs automatically
+        ESS (Extended service set. combination of all AP areas)
+            same SSIDs on the different APs to make a bigger coverage in the office!
+        Roaming (Same SSID on different channels)
+    Tools
+        inSSIDer
