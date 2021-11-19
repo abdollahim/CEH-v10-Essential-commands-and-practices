@@ -1,0 +1,11 @@
+Standards and Regulations
+    Layer 1 and 2 are important layers to us because after sending packets out of the network, regulation organizations see them and be careful what we are doing ;)
+        Physical and Data Link
+    IEEE working groups create these standards
+        like 802.11 (have a look at the website)
+            they might publish new features/updates on standards
+    Some 3rd parties check device compatibilities by these standards  to give a certificate to produce a device with that compatibility
+        like WIFI alliance for Wireless devices
+    There also should be regulations on radios to prevent collision
+        we can use all preferred/legal frequencies approved by countries or get a certificate for a frequency at our own 
+            it's managed in the US by FCC and in Europe by ETSI
