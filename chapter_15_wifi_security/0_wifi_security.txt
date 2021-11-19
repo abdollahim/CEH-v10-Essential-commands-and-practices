@@ -1,0 +1,28 @@
+WIFI Security (It's better to say Wireless Security)
+    It's new to CEH Version 10
+    Bluetooth, 3G, 4G, and etc.
+    Fundamentals
+        Wireless access technology
+        Network topologies
+        Communications on protocols
+        Mobile technologies
+        Security policy implications
+    Packets contain SSID
+    ACL
+    MAC Address
+    Kali
+        it needs to see the adapter.
+            it's better to have a specified adapter for testing purposes!
+    Easy to hard
+        OPEN
+        ACL
+            Whitelisting
+                make a trust access list
+        WEP
+            it has key management problems and shared key
+        WPA2,3
+    Rouge AP
+        like fake free Hotspot/access point
+    Lots of concepts and tools
+        like wardriving
+    Be careful about Free WIFI
