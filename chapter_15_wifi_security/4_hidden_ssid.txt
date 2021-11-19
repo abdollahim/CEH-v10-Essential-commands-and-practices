@@ -1,0 +1,29 @@
+Hidden SSID
+    Concept
+    Kali
+        Start Wireless monitoring
+            airmon-ng
+        Discover the APs
+            airdump-ng
+        Wait for associations or use
+            airreplay-ng
+        Module 92 of CBT
+        
+        Commands:
+            airmon-ng start <interface>
+                start monitoring mode on the interface
+            airmon-ng
+                to see monitoring mode is enabled or not!
+            airodump-ng <monitoring enabled interface>
+                dump/see all packets are transferring around us. Hidden networks are included!
+                some of them might have ESSID length of zero. it means they are Hidden networks ;)
+                after a while when a device connects successfully to the Hidden device, we can see the name of the AP in the ESSID column ;)
+                if we don't want to wait for a new device to make an association, we can send a Deauth attack packet to that MAC address to make all clients forced to do a new reassociation ;)
+                    like this:
+                        airplay-ng -0 <how many times you want to send a broadcast attack> <MAC address> <monitoring enabled interface>
+                            now, all clients have to reassociation ;)
+            airodump-ng -c <channel number> <monitoring enabled interface>
+                like above for a specified channel number
+    inSSIDer
+        it can be installed to show you Wireless networks are there around you!
+            graphically
