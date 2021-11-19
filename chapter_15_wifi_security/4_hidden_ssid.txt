@@ -26,4 +26,4 @@ Hidden SSID
                 like above for a specified channel number
     inSSIDer
         it can be installed to show you Wireless networks are there around you!
-            graphically
+            it's graphically
