@@ -1,0 +1,23 @@
+MAC Filter
+    Concept
+        here we want to find the MAC address defined in the AP as a whitelist to change our MAC address to that MAC address to allow ourselves to be associated with that AP ;)
+    Find the AP
+        airmon-ng and airodump-ng
+    Find an associated client
+        airodump-ng
+            to see what MAC addresses are connecting to that ;)
+    Spoof the MAC
+        macchanger
+            now, you can change your MAC address to connect to that AP ;)
+    Commands
+        except for all commands we have seen in the previous video we only mention new commands:
+            iwconfig <monitoring disabled interface> essid <SSID> channel <channel number>
+                to test we can normally connect to that AP or not. to know it has an MAC filter configured or not!
+            airodump-ng -c <channel number> -a --bssid <MAC address> <monitoring enabled interface>
+                we want to find MAC addresses that are already connected/associated to the AP to change our MAC address to their MAC ;)
+            macchanger -m <new MAC address you want to apply to your interface> <monitoring disabled interface>
+                it changes your MAC address on the interface ;)
+                before this, you should stop monitoring mode on the interface!
+                after this, you should make the interface down and up again ;)
+            Now, you can connect to the AP with a whitelist MAC address ;)
+    Module 93 of CBT
