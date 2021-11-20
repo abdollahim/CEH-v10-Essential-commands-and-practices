@@ -13,14 +13,25 @@ WIFI Security (It's better to say Wireless Security)
     Kali
         it needs to see the adapter.
             it's better to have a specified adapter for testing purposes!
-    Easy to hard
+    Wireless Encryption Mechanisms (Easy to hard)
         OPEN
         ACL
             Whitelisting
                 make a trust access list
         WEP
             it has key management problems and shared key
-        WPA2,3
+            The WEP standard was introduced as the initial solution to wireless security but was quickly found to be flawed and highly vulnerable.
+        WPA
+            In many areas it succeeded and made for a much tougher security protocol.
+            WPA uses Temporal Key Integrity Protocol (TKIP) and message integrity code (MIC)
+        WPA2
+            WPA2 is much stronger and uses tougher encryption in the form of AES and CCMP (Counter Mode with Cipher Block Chaining Message Authentication Code Protocol).
+            The standard also comes in a version that uses stronger systems such as Extensible Authentication Protocol (EAP), TKIP, and AES (with longer keys).
+    Authentication Technologies
+        EAP is incorporated into multiple authentication methods, such as token cards, Kerberos, and certificates.
+        Lightweight Extensible Authentication Protocol (LEAP) is a proprietary WLAN authentication protocol developed by Cisco.
+        Remote Authentication Dial-In User Service (RADIUS) is a centralized authentication and authorization management system.
+        802.11i is an IEEE standard that specifies security mechanisms for 802.11 wireless networks.
     Rouge AP
         like fake free Hotspot/access point
     Lots of concepts and tools
