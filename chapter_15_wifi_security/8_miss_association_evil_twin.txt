@@ -1,0 +1,19 @@
+Miss Association Evil Twin
+    It's a fun attack
+        The computer is trying to connect to WIFIs it knows!
+    Our Wireless devices always try to connect to the pre-connected Wireless devices when they are turned on!
+        they even tell everyone that we want to connect to them :D
+            can you believe that?
+                you can see all AP names that stations/devices want to connect to on the Sniffing ;)
+                    so we can see all APs that devices are looking for and creating fake APs with the same names to get devices connected to our fake AP and there isn't anything to worry about because almost always there aren't real APs with those names ;)
+                        we can almost use it for Wireless APs that doesn't have a password!
+        now, as we said before, we can run a fake AP as a WIFI we want to make devices able to connect to us instead of the real Wireless AP!
+    Commands
+        airmon-ng start <interface>
+            start monitoring mode of the interface
+        airodump-ng <monitoring enabled interface>
+            watching the network to find out what networks we have and which one is better to make a fake AP for it ;)
+        airbase-ng --essid <new AP SSID. like "McD"> -c <channel number> <monitoring enabled interface>
+            creating an AP with the name we mentioned as an interface! (like at0)
+        here we need other commands like the DHCP server configuration we mentioned in the last video!
+            even sending Deauth broadcast to force clients to need to re-authenticate and because we are more close to them, they try to connect to us instead of real AP ;)
