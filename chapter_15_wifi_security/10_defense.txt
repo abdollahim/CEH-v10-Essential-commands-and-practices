@@ -1,0 +1,15 @@
+Defense
+    Wireless Lan Controllers (WLC) help to do central configs
+        push configs to devices automatically
+        you don't need to change all configs manually in a company or ISP
+    IDS/IPS see rouges because others are seeing its signals even with triangulations
+        find fake devices or access points with triangulations and check around!
+    It's possible to have RADIUS/LDAP/Kerberos to give specific keys to users, and not PSK
+        802.11 which is WPA2 Enterprise
+    Hide SSID and enable MAC filtering
+        Whitelisting
+    WEP is off the table
+    Use secure VPN services to hide your activities
+    Use wired connections if you do something so important and secret ;)
+        here you can have something like Port-Security or some ;)
+    User awareness
