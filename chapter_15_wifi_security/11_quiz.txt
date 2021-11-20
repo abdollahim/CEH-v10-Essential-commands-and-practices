@@ -1,1 +1,18 @@
-1. 
+1. Which of the following options shows the protocols in order from strongest to weakest?
+    D: WEP is by far the weakest of the protocols here; WPA is the next stronger, and WPA2 is the strongest of the group. Open implies little or no protection at all.
+2. When a wireless client is attached to an access point, it is known as which of the following?
+    A: In an infrastructure network the client attaches directly to an access point instead of another client.
+3. What is a PSK?
+    C: A PSK is entered into each client that is going to access the wireless network. It is commonly found in WEP, WPA, and WPA2 deployments. PSKs represent a security risk because they can be extracted from a compromised client and then allow a malicious party to access the network.
+4. What is the purpose of a deauthentication attack?
+    B: The purpose of a deauthentication attack is to force stations to reauthenticate. This allows the attacker to collect information from the authentication and handshake. This information could be used later to potentially derive the key, as in WEP transmissions. A deauthentication attack doesn’t disable stations. There is no way to reduce the number of steps in a handshake, and downgrading encryption is considerably harder, if it’s possible at all.
+5. Which one is a more efficient way to secure a Wireless network?
+    A: WPA2 PSK
+6. Which kind of devices can detect a Rouge access point (AP)?
+    C: IDS
+7. The best describes of comparing WEP and WPA2?
+    C: with too many frames of WIFI we can find the key of WEB that is more easier than finding the password of WPA2.
+8. In a penetration test, we face to a WPA2 network. How can we break it?
+    D: we should sniff some traffic via sending deauthenticate broadcast and trying too many passwords to find the key.
+9. We know that there is a Free Wifi nearby and it isn't using an authentication method and hide its SSID. How can we enter that network?
+    D: client can enter without authentication and SSID is in all packets so we can find that with Sniffing.
