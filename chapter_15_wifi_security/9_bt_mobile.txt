@@ -1,0 +1,43 @@
+Bluetooth
+    Short-range on 2.4GHz and 33 feet/10 meter
+        generations are not part of CEH
+    Three modes
+        Discoverable
+            everyone can find the device
+        Limited Discoverable (Short time)
+            these days, default all devices are undiscoverable. after you turn it on, it will be discoverable for about 30 seconds!
+        Non-Discoverable
+            default mode on almost all new devices
+    Pairing mode and Non-Pairing mode
+    Antennas will help both Bluetooth and Wireless to stay away from the stations
+        you can buy a long-range antenna to see others from a long distance!
+    Attacks
+        like
+            leaking calendars
+            friend lists
+            creating problems in Bluetooth by Non-Standard devices
+            remotely controlling devices and worms
+                via a file
+                    old age in bus, subway, or some ;)
+            BlueJacking
+                it's possible yet, but Bluetooth isn't so popular these days ;)
+                writing messages and then sharing with Bluetooth
+            BlueSnarfing
+                getting data from devices are trying to send broadcast messages
+                    they should have security problems
+            Bluetooth Honeypot
+                use the "bluepot" tool
+    Tools
+        btscanner
+            can do inquiry scan and wait for others
+    Channels
+        there are 32 channels 
+Mobile (Cell phones)
+    IOS and Android
+    They are Smart
+        they're collection data
+    Be careful about Applications
+        the source of getting applications
+        Applications use HTTP channels!
+        Applications that need much different permission
+    Regular attacks like HTTP sniffing, MiTM, malware, etc.
