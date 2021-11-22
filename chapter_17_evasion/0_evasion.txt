@@ -1,0 +1,64 @@
+Evasion
+    In CEH Version 9
+    It's how we can Evade/bypass something like Firewall to get access to the Network ;)
+    You should know how they try to capture/prevent you ;)
+    IDS
+        Analyze
+            detecting/blocking suspicious packets/requests
+        Identify
+        Report misuse of Network/Host
+        Tools
+            NIDS
+                they're in the network as a device to watch/monitor Network packets.
+                inspect packets
+            HIDS
+                host-based. installed on servers (mainly Windows)
+                checking packets
+            LFMs
+                Watch/monitor Log files to see what happens and detect abnormal activities.
+                    looking for patterns
+                    like watching log files to see who is trying to connect to the SSH more and more and block or looking for this type of request in Apache logs to find SQLi strings ;)
+            File integrity
+                like TripWire
+                    looking for/hashing sensitive directories contents and store that to find out if they change ;)
+                        some directories or files won't be changed and we don't expect them to change!
+        How?
+            check for anomalies, signatures, rules, etc.
+                a series/sequences of packets/strings or some.
+            it might check for things that are not in its DB. (it's abnormal!)
+                it's vice versa
+                    it can have some normal activity patterns in the DB and block everything if was not in the DB!
+            protocol detection
+                detect other protocols we have not used!
+            if anomaly passes a threshold, informs
+                like buzzing if failed logins go above 80 for example ;)
+    Firewall (It can act as an IDS too)
+        from block sending requests from an IP to another IP to advanced methods like blocking SQLi like commands/strings. 
+        DMZ
+            the buffer zone between public and private to connect public incoming requests to the specific server/web server in the private area ;)
+                it also exposes some of the private
+        Packet filtering
+            Network-level
+                we can create rules with DST, SRC, Port, Protocol
+                    like DST ANY DROP 22
+                    like SRC ANY DROP 80
+        Circuit level gateway
+            works in the session layer
+                it can check if the session request is valid by checking the TCP handshake
+                like dropping an RST request without any pre ESTABLISHED connection/session!
+        Application layer
+            checking the Application level data
+            like checking if a user is logged in or not!
+        Stateful multilayer inspection
+            combines all above
+            works in all layers
+    Detecting Firewalls
+        detect which Firewall is running?
+            Port scanning
+                if we can't do a Ping, there can be a Firewall out there ;)
+                if we get all ports filtered, it can be the behavior of a Firewall ;)
+                if our RST, FIN requests don't get any response, it can be a Firewall ;)
+                if our requests included SQLi strings don't get any response, it can be a Firewall ;)
+                etc
+            Firewalking
+                firewalk -S1-1024 -i <interface> -n -pTCP <gateway IP> <target IP>
