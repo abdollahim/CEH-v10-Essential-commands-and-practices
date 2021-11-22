@@ -1,0 +1,49 @@
+Evasion Techniques
+    IDS
+        how to evade an IDS?
+            DOS on IDS
+                hack the IDS
+                sometimes might drop packets if it can't check them or may pass them into the Network ;)
+            Insertion
+                IDS and intended Server will receive different packets
+                Example
+                    1. we want to send the message "SQL" to the final Server that is behind an IDS.
+                    2. we can send a message like "STQHL" to the Network, but each character is inside a different packet with different TTL.
+                    3. now, we set TTL of the unwanted characters packets to a number that we know it can't deliver to the final Server and only can give to the IDS, but we set the TTL of the "SQL" characters packets a number we know it can deliver to the Server.
+                    4. so IDS can STQHL that it's ok and it doesn't seem any problem, but the Server can see SQL that it is an SQLi command that can be dangerous ;)
+                        TTL was an example. we can send a wrong Checksum or any ;)
+                            we should find a way that IDS detects but the Server won't.
+            Obfuscating
+                sending Hex characters/comments between characters/etc to bypass IDS detection ;)
+            Crying wolf (IDS can be a Crying wolf :D)
+                you can do an attack that you know IDS will buzz for it for ten times in the night to annoy the employer/supervisor ;)
+                then, he may turn it off because of annoying. after that you can run a real attack to hack the Network without worrying about someone is watching you :D
+            Session Splicing (Fragmenting)
+                you can send a dangerous message in different fragments, so IDS can't detect/track it ;)
+                    it can be so heavy if IDS wants to track all packets between all destinations :D 
+            Fun with TCP Flags
+                Bogus RST
+                    the wrong checksum will result in IDS not testing the packet/passing it or dropping it!
+                Sense of Urgency (URG flag)
+                    if URG is set to true/one, it means that it should deliver as fast as it can, so sometimes IDS may pass the packets with the URG flag ;)
+    Encryption
+        IDS can't read/decrypt encrypted packets like TLS packets to check the payload, so they can pass easily ;)
+    Firewalls
+        IP address Spoofing
+            sometimes you know that send/receive between two IP addresses are allowed, so you can Spoof your SRC IP address as the allowed IP to make sure that IDS will deliver that to the Server ;)
+        Source routing
+            you can plan the routing and bypass the Firewall!
+                sometimes Routers may not forward inside packets to the Firewall to check it, so you can Spoof or do any to be seen that your packet is a packet from the inside of the Network and it can prevent forward to the IDS ;)
+        Fragmentation
+            very small Fragmentation
+                TCP header information will go to the next packet!
+        Bypass domain name by using IP directly!
+            using IP addresses instead of Domain names in packets ;)
+                sometimes some IDSs may not check them and forward them to the destination ;)
+        ICMP Tunnel
+            like Loki
+                sending your data in the ICMP payload to bypass IDS and Firewall ;)
+                    you can use it in Hotels to bypass Firewall rules on the HTTP type packets. it will forward your ICMP packets to the Internet ;)
+        ACK Tunneling
+            The firewall may not check anything with ACK flag
+        HTTP Tunneling
