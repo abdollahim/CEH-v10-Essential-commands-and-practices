@@ -1,0 +1,22 @@
+Attacks Toward Phones
+    Web
+    Network
+        you can attack the Network to Sniff or do a MiTM attack or something ;)
+    Malware
+        you can even install a bad Application on the Phone to Hack it ;)
+        Types
+            Viruses
+                Viruses need to attach to other programs to spread themselves!
+            Worms
+                they can spread themselves on their own. they don't need any other programs to do that ;)
+                    like copying
+            Back doors
+                like Trojans (Trojan Horses)
+            Mining scripts
+                like java scripts come to your phone browser to mine with your processor ;)
+    Social Engineering
+        SIM Swap
+    Access to Data
+        After access to your phone, an attacker can use/theft/do something bad instead of you ;)
+        Data Loss
+        Data theft
