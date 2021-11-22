@@ -1,0 +1,7 @@
+Mobile Devices
+    It's in CEH Version 9
+    That's not a big deal. for us, it's common sense!
+        it means that is crystal clear.
+    Mainly Android and IOS, but also Blackberry and Windows.
+    Mobile Devices Can be attacked or used for attacking other devices!
+    You can make an Android x86 virtual machine!
