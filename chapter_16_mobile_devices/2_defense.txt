@@ -1,0 +1,63 @@
+Defense
+    It's an advanced computer
+    Footprinting
+        Nmap
+            we can install it on Android devices
+    Scanning
+        Kismet shows devices
+            installing on Android devices
+    Exploitation
+        MiTM
+        Spoofing
+        ARP Poisoning
+        etc
+    Tools
+        Network
+            IP Tools
+            Fing
+                something like PingTools for Android
+            Packet gen
+            Packet capture
+        Session Hijacking
+            Sniffing Facebook sessions on open/local networks to Hijack their sessions ;)
+                DroidSheep
+                FaceNiff
+            SSLStrip
+        DOS
+            LOIC
+        Scanners
+            WPScan
+            CCTV Scan
+        SQLi
+        Proxy
+            to test a phone or its network activities, we can make a proxy for it to monitor/watch packets easily ;)
+        Web Application testing
+        WIFI tools
+            Wifite (WIFI cracking)
+            Wigle (Wardriving)
+            Penetration testing
+                dSploit
+                    mapping
+                    fingerprinting
+            Stay anonymous
+                Orbot
+                Orweb
+    Prevention
+        Backup
+            store your data somewhere else.
+        Updates
+            getting updates periodic
+        Trusted sources
+            only install Applications from trusted sources.
+        Safe passwords/patterns
+        Encryption
+            Encrypt your files
+        Signing
+            install signed Applications
+        Common sense
+        ACL/Permission on programs
+            check Applications Permission list
+                deny if you think they're not needed ;)
+        Isolation in extreme cases
+            separate your phones/works/Applications/etc for different purposes/usage ;)
+                for example, if you have to install an Application you are not sure about it, you can install it on a virtual machine/another phone.
