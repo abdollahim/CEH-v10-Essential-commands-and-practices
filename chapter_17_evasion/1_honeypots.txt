@@ -1,0 +1,21 @@
+Honeypots
+    Concept
+        sometimes an attacker can bypass/evade/hack the Network and come inside. then he can scan the Network and find IPs, servers, Databases, and etc. now, he finds the IP address of the Honeypot server that we configured as a Honeypot to encourage the attacker to connect to it because almost it has some issues to make it easy to hack ;)
+            this server isn't a real/responsible server and we only put some data/services/applications to seem it's real, but we are watching/monitoring it to see any change in Logs to know when someone comes in ;)
+                now, we can catch it and detect it in the Network because as normal we don't use it or even connect to it ;)
+    It's good to have in DMZ
+    It can be a Virtual Machine!
+    Low interaction
+        just an insecure/vulnerable server
+            we can only run Honeypot software to act as a vulnerable server and respond to the attacker like a normal server. even attackers can open an SSH channel on it, run commands like ls, cat, etc, but it isn't a real server. It's just a trap ;)
+    High interaction
+        a complete Network with some different servers!
+    Hints
+        for example, you can see Logs to find out what the attacker was looking for!
+            was he trying all random username passwords?!
+            did he have a purpose about the hack?!
+                a dictionary attack with username/passwords combined from the personal details of the Manager ;)
+                    His names, cat name, birthday, address, phone numbers, etc!
+    Honeypot Softwares
+        like cowrie
+            it can simulate a server to respond and store activities of attackers ;)
