@@ -1,0 +1,12 @@
+1. What is the benefit of encryption on mobile devices?
+    B: Encryption safeguards data on devices that have been lost or stolen.
+2. Jailbreaking a phone refers to what?
+    C: Jailbreaking refers to gaining root access on a mobile device, specifically iOS devices.
+3. Android is based on which operating system?
+    D: Android is based on Linux.
+4. iOS is based on which operating system?
+    B: iOS is based on OS X.
+5. When a device is rooted, what is the effect on security?
+    B: Security is lowered on a device when rooting in performed.
+6. An attack that can be performed using FaceNiff is -------------.
+    C: FaceNiff is used to take over active sessions.
