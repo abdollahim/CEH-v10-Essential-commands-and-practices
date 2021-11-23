@@ -1,0 +1,31 @@
+Concerns
+    All previous Concerns
+        being hacked
+        SQLi
+        DOS (maybe)
+        etc
+    Where is the Data? in many places we don't know exactly :(
+        for more secure projects and Data, it can be high risk!
+            some people say our Data is in the Cloud and think it's perfect
+                your Data isn't in the Cloud, it's in someone else Computer/Storage :D
+                    it can have a bad admin/employee/etc!
+            your Data can be in a country the government can get them by rules ;)
+    Are we locked in this provider?
+        What happens if prices increase, the company goes out of business or something?!
+        How are the migration/export routines?!
+            it's easy to move or not ;)
+            do they have a standard format to make it easy to move or not?!
+    Easy to enter, difficult to go out
+    eDOS
+        Economic DOS
+            1. when you have a normal host, you have a limitation on your resources and it can be down your service when requests increases, but in Cloud services, you can set adding resources dynamically if your service needs some more resources because of more requests, so it adds automatically some new resources without down your system.
+                finally, at the end of the month, you will receive a bill with an unbelievable price :D
+            2. it can consume your credit on sending more and more SMSs by sending new messages because you connected your credit card to auto-charge your balance of SMS service that the Cloud platform provided to you :D
+            3. they can use your service and increase your price!
+            4. even access admin GUI and order extra service!
+    Hypervisor
+    Other programs
+        some new websites can be hosted on the same disk/resources that you are on, and hack your service via sharing resources ;)
+    CPU bugs
+        CPU bugs we saw published in recent years
+            they're so dangerous and difficult to fix!
