@@ -1,0 +1,27 @@
+Encryption
+    Confidentiality
+        keep it Secret
+            others can't see it
+    Integrity
+        keep the message as when it was original
+            it's not changed
+    Identification
+        we can decrypt the message with Bob's Key, so we can make sure it is encrypted by Bob!
+    Plain text -> Encryption algorithm -> Cipher text
+        like ABCDEFG -> Algorithm A -> hsdfu3gy23bwhbdj
+    Keys should be secret, not the algorithms
+        we should have a secure and safe Key prevent it from Decryption even if we know the algorithm!
+            algorithms that don't have any Keys and they made by people personally are weak and not reliable!
+                it's good when we know the algorithms, but we can't decrypt it because we don't know/have the Key ;)
+                    like popular algorithms everyone use!
+    Symmetric
+        Key or Single Key, Secret Key, Session Key, Shared Key
+            Encryption Phase:   Plain text  ->  with Key A  ->  Cipher text
+            Decryption Phase:   Cipher text ->  with Key A  ->  Plain text
+    Asymmetric
+        Pair Keys
+            Encryption Phase:   Plain text  ->  with Key A  ->  Cipher text
+            Decryption Phase:   Cipher text ->  with Key B  ->  Plain text
+    Steganography
+        hiding something in something else especially in Pictures/Images
+            it can put Data between bits of the file, but the Picture/Image can't be detected as a changed file with eyes!
