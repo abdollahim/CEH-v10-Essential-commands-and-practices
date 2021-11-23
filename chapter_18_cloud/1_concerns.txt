@@ -29,3 +29,51 @@ Concerns
     CPU bugs
         CPU bugs we saw published in recent years
             they're so dangerous and difficult to fix!
+    Threats to Cloud Security
+        Data breaches
+        Data loss
+        Account and service traffic hijacking
+        Insecure APIs
+        Denial of service
+        Financial impact
+        Malicious insiders
+        Abuse of cloud services
+        Poor security or lack of due diligence from the service provider
+        Multi-tenancy environments
+        Shared environment
+    Cloud Computing Attacks
+        Session Riding (aka Cross-Site Request Forgery)
+        Side Channel Attacks
+        Signature Wrapping Attacks
+        Other Types of Attacks against the Cloud
+            Service hijacking using network sniffing
+            Session hijacking using XSS attacks
+            Domain Name System (DNS) attacks
+            SQL injection attacks
+            Cryptanalysis attacks
+            Denial-of-service (DoS) and Distributed DoS attacks
+    Testing Security in the Cloud
+        SOASTA CloudTest
+            mobile functional and performance testing and web-based functional and performance testing.
+            It can simulate millions of geographically dispersed concurrent users visiting a website to test the application under huge loads.
+        LoadStorm
+            load-testing tool for web and mobile applications and is easy to use and cost effective.
+            It is ideal for checking performance under excessive traffic or usage and is highly scalable.
+            it can simulate as many virtual users as required to find the breaking point of a website or app.
+        BlazeMeter
+            BlazeMeter is used for end-to-end performance and load testing of mobile apps, websites, and APIs.
+            It is JMeter compatible and can simulate up to 1 million users.
+        Nexpose
+            Nexpose is a widely used vulnerability scanner that can detect vulnerabilities, misconfigurations, and missing patches in a range of devices, firewalls, virtualized systems, cloud infrastructure, and the like.
+        AppThwack
+            AppThwack is a cloud-based simulator for testing Android, iOS, and web apps on actual devices.
+            It is compatible with popular automation platforms like Robotium, Calabash, UI Automation, and several others.
+            If you wish to test through clients other than the official site, there is a REST API that allows that.
+            Other key features include multi-platform support, customizable testing, and detailed test reports.
+        Jenkins Dev@Cloud
+            It allows development in many languages and deployment to any number of services. It provides a wide array of mobile tools for development and allows you to connect securely to existing systems via the cloud. It brings in benefits of third-party systems like Google App Engine, Cloud Foundry, and AWS Elastic Beanstalk.
+        Xamarin Test Cloud
+            Xamarin Test Cloud is a UI acceptance-testing tool for mobile apps. It allows writing tests in C# using the NUnit testing library through the UITest framework or in Ruby through the Calabash framework.
+            The tool runs the test on over a thousand physical devices and displays full-resolution screen shots of each step, including relevant data like CPU and memory usage and test time.
+            It can be integrated into automated builds for continuous integration.
+    Read pages 645, 646, 647 of CEH Book Version 9
