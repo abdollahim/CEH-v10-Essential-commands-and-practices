@@ -1,0 +1,18 @@
+1. An HIDS is used to monitor activity on which of the following?
+    D: An HIDS (host-based intrusion detection system) is used to monitor security violations on a particular host.
+2. Which of the following can be used to identify a firewall?
+    C: Port scanning can be used to identify certain firewalls because specific ports are known to be open and available on some firewalls.
+3. An NIDS is based on technology similar to which of the following?
+    A: An NIDS includes extra features not found in programs such as Wireshark, but at its core it functions in a similar way to a packet sniffer.
+4. Which of the following can be used to evade an IDS?
+    D: Encryption can be used to avoid specific types of firewalls because of their inability to decrypt the traffic.
+5. Firewalking is done to accomplish which of the following?
+    D: Firewalking can be used to analyze the configuration and rules on a firewall.
+6. An anomaly-based NIDS is designed to look for what?
+    B: An anomaly-based NIDS is designed to look for deviations from known traffic patterns and behaviors on the network. Such NIDSs need to be tuned to the network they are connected to.
+7. A firewall is used to separate which of the following?
+    A: Networks are separated into different zones of trust through the use of firewalls, with the most typical setup being public and private networks on either side.
+8. At which layer of the OSI model does a packet-filtering firewall work?
+    C: A packet-filtering firewall works at Layer 3 of the OSI model.
+9. What can be used instead of a URL to evade some firewalls?
+    A: An IP address will in some cases allow a website to be accessed through a firewall, whereas a URL would not.
