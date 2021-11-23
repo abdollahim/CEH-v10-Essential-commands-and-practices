@@ -1,0 +1,20 @@
+Benefits
+    You can rent high-quality/powered resources only for many hours/days for a low price!
+    Most of the time, companies do have better securities measurements than us.
+        also better devices and observations
+            they sure have better Firewall, IDS, IPS, Routers, Servers, Cables, Teams, Technicians, and etc.
+    Automatic scale-up
+        get more resources without getting your permission each time it needs!
+    Automatic scale-out
+        get more servers while your server is under attack without getting your permission each time it needs!
+    Most of the time, they do have DDOS defense!
+        like Cloudflare (even if you get a free plan!)
+    We will need fewer resources and just purchase them
+        we don't need to hire a Security expert, Network/System admin, and etc.
+    Easier Auditing
+        legal and technical
+            we need to pass/follow some Auditing rules if we have our infrastructure, but if we use Cloud services they had to pass/get all of them, so we have them by default ;)
+    Easier disaster recovery
+        make sure that your provider stores them beforehand!
+            they sure have better solutions like weekly backups to restore data after a disaster happened ;)
+                you have to test it and restore it to test routines, because sometimes they are only advertisements ;)
