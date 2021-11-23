@@ -1,0 +1,10 @@
+1. Which of the following can be used to protect data stored in the cloud?
+    B: Drive encryption or its equivalent would be useful in protecting data stored in the cloud.
+2. SOAP is used to perform what function?
+    B: SOAP is used to enable protocol-independent communication between applications.
+3. Which attack alters data in transit within the cloud?
+    C: Man-in-the-middle attacks are effective at altering data in transit between applications and the cloud.
+4. Cloud technologies are used to accomplish which of the following?
+    D: all answers
+5. A cloud environment can be in which of the following configurations except?
+    D: There is no officially recognized environment referred to as LaaS.
