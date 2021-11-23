@@ -1,0 +1,39 @@
+Cloud
+    It's in CEH Version 9
+    The hypervisor can share CPUs, Memories, etc between Virtual Machines.
+        here we have some problems known as OverSelling resources can use more than the amount we have!
+    Cloud can provide VM, Space, etc.
+    Cloud can be 3rd party or your own company.
+    Benefits
+        Self Service
+            you don't need to think about:
+                what HDD/SDD you should buy
+                how you should configure them
+                how you should secure them
+                how you must maintain them
+                etc.
+                It already exists and is ready to use ;)
+        Measured (pay as you use)
+            prices are based on how you use it!
+                you don't need to buy anything!
+        Elasticity
+            It can grow as you need new resources as your project grows ;)
+                you can increase your Dockers as you need new ones!
+            we something about this term called eDos ;)
+        Pooling (sharing non-utilized resources)
+            in Cloud services, providers sell services with more than physical resources to clients because they think that clients won't use all of their resources as soon ;)
+        Network Access
+            remote access is so popular and normal way to access them ;)
+    Types
+        PaaS (Platform as a Service)
+            for example, we have an installed platform with all requirements to run Python projects with their Databases and everything may we need ;)
+                we don't need to worry about installing tools and wasting time or even worrying about its security ;)
+        SaaS (Software as a Service)
+            like Office360 (It's fully online)
+            like Google Drive
+        IaaS (Infrastructure as a Service)
+            like Storage, Computing, etc.
+                Picture storing cloud or something.
+                Cloud Computing platform
+                    like AWS
+            like DropBox
