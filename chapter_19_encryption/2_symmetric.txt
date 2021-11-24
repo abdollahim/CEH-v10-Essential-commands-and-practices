@@ -1,0 +1,28 @@
+Symmetric
+    The same Key is used for Encryption/Decryption
+    Exchanging the Key
+        An important problem in Symmetric algorithms is that we need a Safe/Secure channel to exchange the Key between two sides because both of them need the Key to encrypt/decrypt data!
+    Block Cipher (block)
+        it can encrypt input data Block per Block with the Key until the end of the last Block.
+            sometimes, the last Block isn't equal to the other Block, so we will add some padding to make it a normal Block to encrypt!
+    Stream Cipher (byte for byte)
+        encrypt data as we come!
+            like XOR
+    Diffie-Hellman lets parties exchange Keys without exchanging Keys! (PSK)
+        two sides of Encryption/Decryption don't need to share the Key!
+    DES (Data Encryption Standard)
+        It's based on Lucifer, it was very common in the 1970s.
+        Block Cipher with 56 bit Key and 64-bit Blocks.
+            3DES uses 3 Keys, 3 times to make it more difficult to break ;)
+                finally, it's better while we are waiting for new algorithms!
+    AES (Advanced Encryption Standard)
+        It's based on Rijndael
+        Variable Key length can be (128, 192, 256) for 128-bit blocks.
+    Concerns
+        algorithms are only one part, we need other parts too!
+            like DH
+                check sslscan on Google and note that it even supports DES-CBC3-SHA
+                    it can check the Cipher Suite
+            Cipher block chaining is a kind of XORing each block with the previous one.
+                they want to make it more difficult to break and reverse it!
+        AES is still considered secure and attackers need side channel attacks to break it.
