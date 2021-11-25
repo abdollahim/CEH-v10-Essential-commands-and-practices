@@ -1,0 +1,30 @@
+Asymmetric
+    Key pairs
+    Public and Private/Secret Keys
+        to send on the Network/clients
+            Plain text  ->  Private/Secret Key  ->  Cipher text
+            Cipher text ->  Public Key          ->  Plain text
+                (everyone who has the Public Key can decrypt/read the message)
+        to receive from the Network/clients
+            Plain text  ->  Public Key          ->  Cipher text
+            Cipher text ->  Private/Secret Key  ->  Plain text
+                (only someone who has the Private/Secret Key can decrypt/read it!)
+    Rivest-Shamir-Adleman (RSA) based on two very large prime numbers (1K, 2K, and 4K Keys)
+        GNU Privacy Guard (GnuPG or GPG) is a free-software replacement for Symantec's PGP cryptographic software suite.
+        It is compliant with RFC 4880, the IETF standards-track specification of OpenPGP.
+        Modern versions of PGP are interoperable with GnuPG and other OpenPGP-compliant systems.
+        GnuPG is part of the GNU Project and received major funding from the German government in 1999.
+    Problems
+        Needs more computing power
+            for most purposes, we can use Symmetric algorithms if we have more less computing power!
+        Overhead, everyone needs to have a Key
+            exchanging Keys and calculating the Keys is a problem!
+            because of this:
+                Systems use Hybrid CryptoSystems
+                    encrypt session Key with the Public Key of the Server
+                        everyone doesn't have all Keys of all clients!
+    Non-Repudiation
+        when you get an encrypted message, it came from the Private Key not anyone else ;)
+    Elliptic Curve Cryptography
+        it is not only difficult (power consuming) to break, but also infeasible in the real world. even with much smaller Key sizes ;)
+            in RSA, it mathematically can break with more power and much time, but here it is infeasible to break ;)
