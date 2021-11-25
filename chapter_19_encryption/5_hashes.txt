@@ -1,0 +1,24 @@
+Hashes
+    Concept
+        Plain text -> Hash Function -> Hashed characters
+    Usage
+        Authentication
+            storing entered passwords instead of Plain text characters
+                we can even add Salts to passwords
+        Verification
+        Integrity
+            make sure about downloading files
+    Message Authentication Code
+    Features
+        Oneway
+            ABC is always a fixed output, but it can't reversible as ease ;)
+        Easy to check
+        Brute force is difficult
+            it's difficult to check all Plain texts to find Hashed output ;)
+        deterministic
+            the same input always give the same output
+        collision resistance
+            it's impossible/hardly never to make the same output from two different inputs ;)
+                some old algorithms might be vulnerable more!
+    MD5 (32 HEX characters = 128 bit)
+    SHA 1, 2, 3 (224, 256, 384, and 512 bits)
