@@ -1,0 +1,6 @@
+1. Physical security can prevent which of the following?
+    C: Tailgating is an attack where an intruder follows an approved individual into a facility. Devices such as mantraps can thwart this attack.
+2. What mechanism is intended to deter theft of hard drives?
+    C: Encryption of an entire drive dilutes the value of the data if the drive is subject to theft; however, it will not keep the drive from being physically stolen.
+3. Why we need physical security?
+    D: all above answers
