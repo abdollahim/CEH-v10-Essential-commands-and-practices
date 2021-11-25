@@ -1,0 +1,6 @@
+1. Which one is the reason of increasing problems of IOT world?
+    D: all answers
+2. What activity Shodan do on the Internet?
+    C: Exploring connected devices to the Internet
+3. IOT devices use what devices to gather, process, store data?
+    all answers
