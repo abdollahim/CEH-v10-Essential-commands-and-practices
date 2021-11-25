@@ -1,0 +1,21 @@
+Certificate Authorities
+    Certificates are data structures that stores Keys (X.509)
+    CA is a repo of certificates
+        collecting data and issuing a certificate.
+    CA and its systems are called Public Key infra (PKI)
+    Anyone can create Certificates, but if you want to be on your Servers and recognized by others, you need to sign it by a CA
+        (Trusted 3rd Party)
+    Only the power will get the Private Key, but everyone can check the Public Key.
+    Keys have fingerprints
+    Generating Self-Signed Keys
+        openssl req -x509 -newkey rsa:4096 -keyout key.pem
+        openssl -x509 -in key.pem -text
+    PGP (GNU - GPG)
+        instead of CA, they use web of trust
+            like MIT
+        I upload mine, then someone who knows me, check my fingerprint and sign my Public Key, so his friends will know me!
+        not good for Servers, but it can be good for people!
+    Secure Multipurpose Internet Mail Exchange (S/MIME)
+        another protocol for sending/signing emails
+        Part of mail exchanging program
+        like X.509 on active directory
