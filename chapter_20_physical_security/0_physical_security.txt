@@ -1,0 +1,59 @@
+Physical Security
+    It's important to think about ;)
+    Simple Controls
+        Passwords
+            all devices should have secure Passwords!
+        Screen Savers
+            automatically
+        Lock Screens
+            locking your Laptop, Phones, and all other devices when you don't need them even for a short period of time!
+        Warning Messages
+            showing a message that says this is the System or area of a company/organization and you don't have permission to enter!
+                this only gives you a legal advantage to track and send the attacker to jail ;)
+        Multi-Factor Authentication
+            HAK (Have, Are, Know)
+                someone who is trying to enter/use something, should Have, Are, and Know something special
+                    like phone, cards, addresses, Passwords, etc.
+                        more factors give you more security ;)
+        Encryption (Mobile devices)
+            securing your hard Drives with your Password. in the other hand, they can plug your Drive somewhere else and read all your Data!
+        Data Storage Security and Backups
+            Full
+            Incremental
+                from the previous Backup
+                Restoration
+                    1. restore the last Full Backup
+                    2. restore all Incremental Backups in order of creation!
+            Differential
+                from last full Backup
+                Restoration
+                    1. restore the last Full Backup
+                    2. restore only the last backup that contains all changes from the last Full Backup.
+                    it's faster than Incremental Backup in terms of Restoration ;)
+        Wiping Drives
+            if you want to put Drives in the trash, you must wipe them first ;)
+            DoD suggests 7 writes at least!
+            Zeroization
+            Degaussing
+                using powerful magnets to destroy them.
+        Non-Repudiation: It was you
+            different users must have their own passwords to detect different people ;)
+    Securing physical area
+        Not only against hackers and etc, but rain and flood and etc can damage your resources ;)
+        Know about lockpicking attacks
+            how to open locks ;)
+                using pretty good locks ;)
+        RFID cards and Biometrics
+        Controlling entries
+            especially for somewhere like Server rooms!
+                users can enter with permission that given before for a specific time and a specific task and location ;)
+        Securing Laptops, Cases and Servers physically
+        Disabling USBs, Drives, and etc.
+        Separating the Internet and the Network
+    Education and Awareness
+    Defense in depth
+        delay the attacker layer by layer
+            on physical they suggest three layers:
+                Perimeter
+                Exterior
+                Interior
