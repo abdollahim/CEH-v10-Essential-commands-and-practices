@@ -1,0 +1,81 @@
+Security Architecture and Design
+    There are Protocols and Standards
+    Design Concept
+    Application Security
+    Disaster Recovery Plans and Business Continuity
+    Not data is created equal!
+        you don't keep Secret your employees enter/leave data as equal as your biologic/drug formula or even your Source Codes ;)
+        Plan for different levels:
+            in Governments
+                Top Secret
+                    they can cause serious problems
+                Secret
+                    they can cause problems if others know that ;)
+                Confidential
+                    Secret things between Managers for example!
+                Restricted
+                    limited to the specific sections of the Organization
+                Official
+                    they are internal things in an Organization
+                    usually, they're not so important, but they are not public too.
+                Unclassified
+                    everyone can see/access them
+            in Companies
+                Restricted
+                    for special departments/sections
+                Private
+                    internal things
+                Public
+                    everyone can see/access them
+    Security Models (who can perform what action on what data)
+        State Machine
+            Step-by-Step routines to finish it ;)
+            very abstract
+            evaluate when the overall state is insecure
+            Models
+                Biba 1975 (Kenneth Biba)
+                    It's mainly about data integrity
+                        everyone need to authorize so it's clear who accessed to what!
+                    Both data and people do have classification levels, so people with some access levels still need authorization to modify data.
+                        some people have some access to some data that need to authorize first ;)
+                Bell-LaPadula
+                    It's for military and governments and mainly about confidentiality
+                        focus is on confidentiality, so system is in secure state all the time!
+                    system can only be in secure states
+                Clark-Wilson Integrity Model
+                    It's not rely on state machines
+                    No object and subject
+                    it focused on consistency of data
+                        only allow access through micro known programs
+                            only someone can run a micro program to do only a thing on the machine, not anything more ;)
+        Classifications change and they have expenses
+    Conflict between Security and Business (CIA)
+        routines should be normal, not so secure that none of employees can access to a simple data as ease, not very available that everyone can see/access it ;)
+        Levels
+            Confidentiality
+            Integrity
+            Availability
+    Separation of duties
+        two man control
+            each tasks should be under control by at least two people ;)
+        rotation
+            rotate job/tasks to prevent detecting behaviors or any!
+        mandatory vacation
+            take them to vacation to change duties to detect any bad works ;)
+        change control
+    Logging
+        to track everything
+    How we handle Risks or Breaches
+        quantifying Risks
+            Measuring Attacks to know:
+                what happened
+                what is the risk
+                what we loss
+                what we should do
+            Vulnerability -> Threats -> Risks -> Loss
+            sometimes, they know all problems and only have a budget to fix some of them, so they must quantify them to know what has more priority to resolve ;)
+        A Security control is a mean of Avoiding, Detecting, Counteracting, or minimizing security Risks
+        NIST (National Institute of Standards and Technology)
+            guidelines
+        Phases
+            Identification -> Protection -> Detection -> Response -> Recovery
