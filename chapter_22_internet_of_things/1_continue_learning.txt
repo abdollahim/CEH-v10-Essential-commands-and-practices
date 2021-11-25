@@ -1,0 +1,15 @@
+Continue Learning
+    OWASP
+    SANS.org
+    BugCrowd
+    Cybrary.it (free)
+    OpenSecurityTraining.info (free)
+    Offensive-Security.com
+    Pentesterlab.com
+    Eccouncil.org (CEH)
+    Books
+    HackerSpaces.org
+    Conferences
+        Defcon
+        BlackHat
+    Other unlimited world of resources :D
