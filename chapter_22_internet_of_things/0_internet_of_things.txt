@@ -1,0 +1,35 @@
+Internet of Things (IoT)
+    More and more in this world
+    They try to be more usable and easy to use ;)
+        because of trying to be in the Market ASAP, they are so insecure because of a hurry.
+            Manufacturers don't work on their firmware and give updates!
+    Types
+        Cameras
+        Sensors
+        Monitors
+        Smart Devices
+        Smart Appliances
+        Smart Cars
+        Coffee makers
+        Toilets
+        etc
+    They Control from the Cloud Applications/Servers
+    They're higher attacks surfaces!
+    Are they encrypted?
+    Are they physically Secured?
+        Theft!
+    They might use as Botnets!
+    Are they Updatable?
+        Are they Updated?
+    They're using APIs!
+        They can be attack vectors ;)
+    They are Controlling important things with important/sensitive/dangerous tasks
+        they can be
+            Cars on the road!
+            Appliances under pressure!
+            etc
+    They have lots of Information to gather!
+    Using carefully in the Network!
+    Tools
+        like SHODAN
+    Do NOT use Default Configuration on them!
