@@ -1,5 +1,8 @@
 Section One.B:
   aircrack-ng capture1.pcap
+Section One.C:
+  you should put the WEP Key in the Wireshark > Preferences > Protocols > IEEE 802.11 > edit
+    to decrypt all packets and see the protocols ;)
 Section Two:
   aircrack-ng capture2.pcap -w /usr/share/wordlists/rockyou.txt
 

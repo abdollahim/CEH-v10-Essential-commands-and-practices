@@ -1,9 +1,14 @@
 Section One:
     A: Names and MAC addresses
-        Main AP:
+        Main AP with SSID:
             SSID: WirelessLab
             Tp-LinkT_1f:73:b0 (00:23:cd:1f:73:b0)
+        Another BSSID:
+            AskeyCom_bf:0b:0b (b4:82:fe:bf:0b:0b)
         Others:
+            AVM_0b:2e:35 (34:81:c4:0b:2e:35)
+            ChinaDra_2b:54:d7 (00:7e:56:2b:54:d7)
+            AzureWav_b2:e1:b7 (24:0a:64:b2:e1:b7)
             IPv4mcast_7f:ff:fa (01:00:5e:7f:ff:fa)
             IntelCor_55:13:e2 (dc:53:60:55:13:e2)
         Stations
