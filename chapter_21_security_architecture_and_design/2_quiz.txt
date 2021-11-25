@@ -1,0 +1,10 @@
+1. Which of the security triad properties does the Biba security model relate to?
+    B: The Biba security model covers data integrity. While other models cover confidentiality, none of them cover availability.
+2. How many functions are specified by NIST’s cybersecurity framework?
+    C: The NIST cybersecurity framework specifies five functions: identify, protect, detect, response, recover.
+3. What is the highest level of classification used by the U.S. government?
+    A: The highest level of classification used by the US government is top secret. Confidential and restricted are lower levels, and eyes only is not a classification used by the U.S. government.
+4. Which mechanism allow the client to authenticate with a same username and password on different platforms?
+    C: SSO
+5. If for an action two people need to available, which mechanism is used?
+    B: two-man
