@@ -7,7 +7,7 @@ Hashes
                 we can even add Salts to passwords
         Verification
         Integrity
-            make sure about downloading files
+            make sure about downloading original files
     Message Authentication Code
     Features
         Oneway
@@ -21,4 +21,5 @@ Hashes
             it's impossible/hardly never to make the same output from two different inputs ;)
                 some old algorithms might be vulnerable more!
     MD5 (32 HEX characters = 128 bit)
+        they showed you can make a collision algorithmic, but it's hardly ever happening!
     SHA 1, 2, 3 (224, 256, 384, and 512 bits)
