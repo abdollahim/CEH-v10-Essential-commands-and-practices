@@ -1,0 +1,6 @@
+Section One.B:
+  aircrack-ng capture1.pcap
+Section Two:
+  aircrack-ng capture2.pcap -w /usr/share/wordlists/rockyou.txt
+
+Other questions can be answered by watching the captures files ;)
