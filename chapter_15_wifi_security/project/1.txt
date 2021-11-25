@@ -1,0 +1,65 @@
+Section One:
+    A: Names and MAC addresses
+        Main AP:
+            SSID: WirelessLab
+            Tp-LinkT_1f:73:b0 (00:23:cd:1f:73:b0)
+        Others:
+            IPv4mcast_7f:ff:fa (01:00:5e:7f:ff:fa)
+            IntelCor_55:13:e2 (dc:53:60:55:13:e2)
+        Stations
+            Shenzhen_72:87:5c (ac:a2:13:72:87:5c)
+            Binatone_1b:99:34 (00:0a:e2:1b:99:34)
+            OnePlusT_43:13:15 (c0:ee:fb:43:13:15)
+            HuaweiTe_ea:b5:1e (8c:eb:c6:ea:b5:1e)
+        
+    --------------------------------------------------------------------------------------------------
+    B:
+        Answer:
+            KEY FOUND! [ 4D:59:4B:45:59 ] (ASCII: MYKEY )
+        
+        Full details:
+                                                        Aircrack-ng 1.6 
+
+
+                                          [00:00:00] Tested 60016 keys (got 17273 IVs)
+
+   KB    depth   byte(vote)
+    0    0/  1   4D(28160) 24(23808) 58(23552) 44(22528) B7(22528) 94(21760) D2(21504) 00(20992) 39(20992) 71(20992) 
+    1    4/ 34   59(21760) E1(21504) 5B(21504) B0(20992) 56(20736) 98(20736) A6(20736) B4(20480) EF(20480) 86(20480) 
+    2   36/ 45   04(19712) 16(19456) 41(19456) 56(19456) 7B(19456) 7C(19456) 81(19456) E6(19456) F1(19456) F2(19456) 
+    3   14/ 40   45(20992) D3(20992) 94(20736) 04(20736) 0F(20480) 58(20480) B2(20480) 00(20480) 1E(20224) 20(20224) 
+    4    0/  1   59(27648) 6F(23040) 25(22016) 20(21760) 38(21760) 30(21504) 53(21504) 67(21504) 84(21504) DB(21504) 
+
+                     KEY FOUND! [ 4D:59:4B:45:59 ] (ASCII: MYKEY )
+        Decrypted correctly: 100%
+    --------------------------------------------------------------------------------------------------
+    C:
+        UDP
+        ARP
+        SSDP
+
+Section Two:
+    Answer:
+        KEY FOUND! [ dictionary ]
+    
+    Full details:
+        
+                               Aircrack-ng 1.6 
+
+      [00:00:01] 7146/10303727 keys tested (6144.40 k/s) 
+
+      Time left: 27 minutes, 55 seconds                          0.07%
+
+                          KEY FOUND! [ dictionary ]
+
+
+      Master Key     : 5D F9 20 B5 48 1E D7 05 38 DD 5F D0 24 23 D7 E2 
+                       52 22 05 FE EE BB 97 4C AD 08 A5 2B 56 13 ED E2 
+
+      Transient Key  : 97 97 AA C7 82 8F 52 F0 EB C7 05 04 C0 A3 7E 31 
+                       7C B3 DF 24 D5 25 85 00 00 00 00 00 00 00 00 00 
+                       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+                       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+      EAPOL HMAC     : 6D 45 F3 53 8E AD 8E CA 55 98 C2 60 EE FE 6F 51 
+      
