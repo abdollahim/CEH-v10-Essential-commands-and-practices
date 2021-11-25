@@ -1,0 +1,31 @@
+Application Architecture
+    Applications and Systems are becoming more Complex
+        many systems are inside and outside of the Company
+            employees using VPNs, work from remote and etc!
+        Databases
+        Dependencies
+        etc
+    N-Tier
+        like Model View Controller or Presentation Application Business Data Access
+        make Applications with separation of different layers
+            make tasks smaller to make/maintain easier ;)
+                it can be even more Secure because we have more Verification levels ;)
+    Service-Oriented Architecture
+        rather than thinking about Applications from End to End (user to data store)
+        it looks like at the different functions needed to make Applications function
+            so programmers will have access only to REST or RPC also Containers
+                each section of the Application only has access to a small section of API/area of the Application.
+    Cloud-Based Architecture
+        it will provide only calls to programmers
+    Central Access Management
+        LDAP
+        RADIUS
+        Diameter
+        TACACS
+        AAA
+            Authentication -> Authorization -> Accounting
+                like ISPs
+    SSO (Single Sign-On)
+        Kerberos
+            we don't want to tell everyone our passwords, so we can tell Google for example to make us log in in the 3rd website with Google activated session ;)
+    VPNs
