@@ -16,10 +16,43 @@ Hashes
         Brute force is difficult
             it's difficult to check all Plain texts to find Hashed output ;)
         deterministic
-            the same input always give the same output
+            the same input always gives the same output
         collision resistance
             it's impossible/hardly never to make the same output from two different inputs ;)
                 some old algorithms might be vulnerable more!
-    MD5 (32 HEX characters = 128 bit)
-        they showed you can make a collision algorithmic, but it's hardly ever happening!
-    SHA 1, 2, 3 (224, 256, 384, and 512 bits)
+    The following is a list of hashing algorithms currently in use:
+        Message Digest 2 (MD2)
+            A one-way hash function is used in the privacy-enhanced mail (PEM) protocols along with MD5.
+        Message Digest 4 (MD4) 
+            A one-way hash function is used for PGP and other systems. MD4 has been replaced by MD5 in most cases.
+        Message Digest 5 (MD5)
+            An improved and redesigned version of MD4 that produces a 128-bit hash. MD5 is still extremely popular in many circles, but it is being phased out due to weaknesses that have led to the system being vulnerable.
+            In many cases, MD5 has been replaced with SHA2.
+                they showed you can make a collision algorithmic, but it's hardly ever happening!
+        Message Digest (MD6)
+            A hashing algorithm was designed by Ron Rivest.
+        HAVAL
+            A variable-length, one-way hash function and modification of MD5.
+            The name is derived from the phrase “hash algorithm of variable length.”
+        RIPE-MD
+            A hashing algorithm is commonly used in Europe.
+        Secure Hash Algorithm-0 (SHA-0)
+            Used prior to SHA-1, it has since been replaced by SHA-1 and even SHA-2.
+        Secure Hash Algorithm-1 (SHA-1)
+            One of the other more commonly used hashing algorithms. It has been compromised and is being replaced by SHA-2.
+        Secure Hash Algorithm-2 (SHA-2)
+            Designed to be an upgrade to SHA-1, SHA-2 identifies the range of hash lengths above SHA-1 (SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/224, and SHA-512/256).
+    In addition to a brute-force attack, other methods designed to recover a key include the following:
+        Cipher-Text-Only Attack
+            The attacker has some sample of Cipher text but lacks the corresponding plain text or the key. The goal is to find the corresponding plain text in order to determine how the mechanism works.
+            Cipher-text-only attacks tend to be the least successful based on the fact that the attacker has very limited knowledge at the outset.
+        Known Plaintext Attack
+            The attacker possesses the plain text and cipher text of one or more messages. The attacker will then use this acquired information to determine the key in use. This attack shares many similarities with brute-force attacks.
+        Chosen Plaintext Attack
+            The attacker is able to generate the corresponding Cipher text to deliberately chosen plain text. Essentially, the attacker can feed information into the encryption system and observe the output. The attacker may not know the algorithm or the secret key in use.
+        Chosen Cipher-Text Attack
+            The attacker is able to decrypt a deliberately chosen Cipher text into the corresponding plain text. Essentially, the attacker can feed information into the decryption system and observe the output. The attacker may not know the algorithm or the secret key in use.
+        Another type of successful attack involves not even cracking the key but simply recording some traffic and replaying it later.
+            This type of attack requires that the attacker record network traffic through sniffing and then retransmit the information later or extract the key from the traffic.
+        Another related attack is the man-in-the-middle (MITM) attack, which is carried out when the attacker gets between two users with the goal of intercepting and modifying packets.
+            Consider that in any situation in which attackers can insert themselves in the communications path between two users, the possibility exists that the information can be intercepted and modified.

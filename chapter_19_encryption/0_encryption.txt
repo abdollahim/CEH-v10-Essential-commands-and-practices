@@ -25,3 +25,27 @@ Encryption
     Steganography
         hiding something in something else especially in Pictures/Images
             it can put Data between bits of the file, but the Picture/Image can't be detected as a changed file with eyes!
+    Action
+        Here are some examples of applied cryptography
+            Public key infrastructure (PKI)
+            Digital certificates
+            Authentication
+            E-commerce
+            RSA
+            MD-5
+            Secure Hash Algorithm (SHA)
+            Secure Sockets Layer (SSL)
+            Pretty Good Privacy (PGP)
+            Secure Shell (SSH)
+    How Does It Work?
+        Plain Text/Clear Text
+        Cipher Text 
+        Algorithms
+        Keys
+    Applications
+        IPsec
+            Internet Protocol Security (IPsec) is a set of protocols designed to protect the confidentiality and integrity of data as it flows over a network. The set of protocols is designed to operate at the Network layer of the OSI model and process packets according to a predefined group of settings.
+        Pretty Good Privacy
+            Pretty Good Privacy (PGP) is another application of cryptographic technologies. Using public-key encryption, PGP is one of the most widely recognized cryptosystems in the world. PGP has been used to protect the privacy of email, data, data storage, and other forms of communication such as instant messaging.
+        Secure Sockets Layer
+            Another important mechanism for securing information is the Secure Sockets Layer (SSL). The SSL protocol was developed by Netscape in the mid-1990s and rapidly became a standard mechanism for exchanging data securely over insecure channels such as the Internet.

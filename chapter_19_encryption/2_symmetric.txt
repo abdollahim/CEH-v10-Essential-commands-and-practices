@@ -1,4 +1,13 @@
 Symmetric
+    Concept
+        Modern symmetric algorithms are great at all of the following:
+            Preserving confidentiality
+            Increased speed over many non-symmetric systems
+            Ensuring simplicity (relatively speaking, of course)
+            Providing authenticity
+        Symmetric algorithms have drawbacks in these areas:
+            Key management issues
+            Lack of nonrepudiation features
     The same Key is used for Encryption/Decryption
     Exchanging the Key
         An important problem in Symmetric algorithms is that we need a Safe/Secure channel to exchange the Key between two sides because both of them need the Key to encrypt/decrypt data!
@@ -11,13 +20,44 @@ Symmetric
     Diffie-Hellman lets parties exchange Keys without exchanging Keys! (PSK)
         two sides of Encryption/Decryption don't need to share the Key!
     DES (Data Encryption Standard)
+        Originally adopted by the U.S. Government in 1977, the DES algorithm is still in use today.
+        DES is a 56-bit key algorithm, but the key is too short to be used today for any serious security applications.
+        DES is still encountered in many applications but should never be chosen without very careful consideration or the lack of other viable options.
         It's based on Lucifer, it was very common in the 1970s.
         Block Cipher with 56 bit Key and 64-bit Blocks.
             3DES uses 3 Keys, 3 times to make it more difficult to break ;)
-                finally, it's better while we are waiting for new algorithms!
-    AES (Advanced Encryption Standard)
-        It's based on Rijndael
-        Variable Key length can be (128, 192, 256) for 128-bit blocks.
+                This algorithm is an extension of the DES algorithm and is three times more powerful than the DES algorithm. The algorithm uses a 168-bit key. 
+                Triple DES, or 3DES, is very commonly used and is a component of many security solutions including e-commerce and others.
+                    finally, it's better while we are waiting for new algorithms!
+    Blowfish
+        Blowfish is an algorithm that was designed to be strong, fast, and simple in its design.
+        The algorithm uses a 448-bit key and is optimized for use in today’s 32-bit and 64-bit processors
+            (which its predecessor DES was not).
+        The algorithm was designed by encryption expert Bruce Schneier.
+    International Data Encryption Algorithm (IDEA)
+        Designed in Switzerland and made available in 1990, this algorithm is seen in applications such as the Pretty Good Privacy (PGP) system
+            (see the section “Pretty Good Privacy” later in this chapter).
+    RC2
+        Originally an algorithm that was a trade secret of RSA Labs, the RC2 algorithm crept into the public space in 1996.
+        The algorithm allows keys between 1 and 2,048 bits.
+        The RC2 key length was traditionally limited to 40 bits in software that was exported to allow for decryption by the U.S. National Security Agency.
+    RC4
+        Another algorithm that was originally a trade secret of RSA Labs, RC4, was revealed to the public via a newsgroup posting in 1994.
+        The algorithm allows keys between 1 and 2,048 bits.
+        RC4 is notable for its inclusion in the Wired Equivalent Protection (WEP) protocol used in early wireless networks.
+    RC5
+        Similar to RC2 and RC4, RC5 allows users to define a key length.
+    RC6
+        RC6 is another AES finalist developed by RSA Labs and supports key lengths of 128–bits and 256 bits.
+    AES (Rijndael or Advanced Encryption Standard)
+        This successor to DES was chosen by the National Institute of Standards and Technology (NIST) to be the new U.S. encryption standard.
+        The algorithm is very compact and fast and can use keys that are 128-bits, 192-bits, or 256-bits long.
+        Rijndael was and is the name of the encryption algorithm submitted for consideration by the U.S. Government as its new encryption standard.
+        When the algorithm was selected, it was renamed AES. While some may argue that Rijndael and AES are different, they are for all intents and purposes the same.
+            It's based on Rijndael
+            Variable Key length can be (128, 192, 256) for 128-bit blocks.
+    Twofish
+        This AES candidate, also developed by Bruce Schneier, supports key lengths of 128–256 bits.
     Concerns
         algorithms are only one part, we need other parts too!
             like DH
@@ -25,4 +65,4 @@ Symmetric
                     it can check the Cipher Suite
             Cipher block chaining is a kind of XORing each block with the previous one.
                 they want to make it more difficult to break and reverse it!
-        AES is still considered secure and attackers need side channel attacks to break it.
+        AES is still considered secure and attackers need side-channel attacks to break it.

@@ -19,3 +19,38 @@ Certificate Authorities
         another protocol for sending/signing emails
         Part of mail exchanging program
         like X.509 on active directory
+    Some of the items included on the digital credential are these:
+        Version
+        Serial number
+        Algorithm ID
+        Issuer
+        Validity
+        Not before
+        Not after
+        Subject
+        Subject public key info
+        Public key algorithm
+        Subject public key
+    Some actions that a CA is called on to perform include the following:
+        Generation of the Key Pair 
+            When a CA goes through the process of creating a certificate, a key pair that is made up of a public key and a private key is generated. The public key is made available to the public at large, whereas the private key is given to the party requesting the digital certificate.
+        Generation of Certificates
+            The CA generates digital certificates for any authorized party when requested. This certificate is generated after validation of the identity of the requesting party, as mentioned earlier.
+        Publication of the Public Key
+            The public key is bound to each digital certificate. Anyone who trusts the CA or requests the public key will get the key for their use.
+        Validation of Certificates
+            When a certificate is presented by one party to another, it must be validated. Since both parties involved typically do not know each other, they must rely on a third party who is trusted; this is the role of the CA.
+        Revocation of Certificates
+            If a certificate is no longer needed or trusted, it can be revoked before it expires.
+    All CAs are not the same. The types of CAs are as follows:
+        Root CA
+            The root CA initiates all trust paths. The root CA is the top of the food chain and thus must be secured and protected; if its trust is called into question, all other systems and subsequently generated certificates will become un-trustable.
+        Trusted Root CA
+            A trusted root CA is a CA that’s added to an application such as a browser by the software vendor. It signifies that the application vendor trusts the CA and assigns the entity a high level of trust.
+        Peer CA
+            The peer CA provides a self-signed certificate that is distributed to its certificate holders and used by them to initiate certification paths.
+        Subordinate CA
+            A subordinate CA does not begin trust paths. Trust initiates from a root CA. In some deployments, a subordinate CA is referred to as a child CA.
+        Registration Authority (RA)
+            The RA is an entity positioned between the client and the CA that is used to support or offload work from a CA. Although the RA cannot generate a certificate, it can accept requests, verify a person’s identity, and pass along the information to the CA that will perform the actual certificate generation. RAs are usually located at the same level as the subscribers for which they perform authentication.
+        
