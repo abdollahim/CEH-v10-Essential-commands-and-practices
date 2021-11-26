@@ -1,0 +1,18 @@
+1. Which one describes steganography better?
+    D: hiding information in a file
+2. for symmetric encryption we need ... keys and for asymmetric encryption we need ... keys.
+    B: 1, 2
+3. The world "maktabkhooneh" encrypted with rot13. which one is the answer?
+    D: znxgnoxubbaru
+4. The world "maktabkhooneh" encrypted with the key "jadi" and vigenere cipher. which one is the answer?
+    D: vanbjbnpxoqmq
+5. How many rotation cipher is needed for all English alphabet to prevent all of them from reputation?
+    B: 25
+6. Which one is correct about symmetric algorithms keys vs asymmetric algorithms keys?
+    A: ECC with much smaller keys have the same security as RSA.
+7. String "5b78738cebb0e68c61404f21e34634837daf16d8" is hashed in hexadecimal format. What is the hash algorithm?
+    B: SHA1
+8. PGP is which one?
+    B: asymmetric
+9. When two strings give us a same output from a hash function what happened?
+    B: collision
